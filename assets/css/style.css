@@ -646,6 +646,18 @@ label {
 	letter-spacing:3px;
 	font-size:14px;
 }
+#contact input#submit2 {
+	width:auto;
+	margin-top:20px;
+	background-color:rgba(0,0,0,0.3);
+	border:0;
+	color:#fff;
+	padding:0px 20px;
+	font-weight:400;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	font-size:14px;
+}
 #contact textarea {
 	height:180px;
 }
@@ -1156,6 +1168,53 @@ img.mfp-img {
 	left: 0;
 	z-index: 2;
 }
+
+/*modal styles*/
+
+#btn-modal{
+	display: none;
+}
+
+.container-modal{
+	background-color: rgba(40, 190, 160, 1);
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	position:fixed;
+	background-color: #28BEA0;
+	top: 0; left:0;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+.content-modal{
+	width: 55%;
+	height: 100%;
+	padding-top: 100px;
+	align-items: center;
+}
+.content-modal h2{
+	text-align: left;
+}
+
+#number2{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#txt-boleto{
+	text-align: center;
+}
+.btns{
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#btn-modal:checked ~ .container-modal{
+	display: flex;
+}
+
 /*	Responsive	==================================================*/ 
 @media (max-width:991px) {
 	.service-box {
@@ -1167,6 +1226,10 @@ img.mfp-img {
 	}	
 	.navbar-nav>li>a {
 					margin:0 7px;
+	}
+	.content-modal{
+		width: 70%;
+		height: 100%;
 	}
 }
 @media (max-width:767px) {
@@ -1194,6 +1257,10 @@ img.mfp-img {
 	}
 	#hero .herotext {
 					padding: 90px 0px;
+	}
+	.content-modal{
+		width: 80%;
+		height: 100%;
 	}
 }
 @media (max-width:767px) {
