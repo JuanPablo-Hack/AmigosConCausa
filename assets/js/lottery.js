@@ -15,7 +15,6 @@ const newNumbers = () => {
         document.getElementById("number2").innerHTML = ""
     }
 
-
 }
 const addNumbers = () => {
     console.log(number)
