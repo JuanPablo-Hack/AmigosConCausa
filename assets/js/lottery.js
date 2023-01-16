@@ -41,3 +41,5 @@ const checkInfo = () => {
     console.log(name2,email2,phone2,number)
     document.getElementById("submit2").style.display = "none"
 }
+
+
