@@ -1,6 +1,9 @@
 let numbers = [];
 let number = 0; 
 
+let bingo = [] //numeros del 0 al 10000
+let numeroE = [] //numero para seleccionar el bingo 
+
 const newNumbers = () => {
     number = Math.floor(Math.random() * (50 - 1 )+ 1)
     let rPNumber = numbers.indexOf(number)
@@ -16,6 +19,7 @@ const newNumbers = () => {
     }
 
 }
+
 const addNumbers = () => {
     console.log(number)
     let rPNumber = numbers.indexOf(number)
@@ -39,7 +43,35 @@ const checkInfo = () => {
     let email2 = document.getElementById("email2").value;
     let phone2 = document.getElementById("phone2").value;
     console.log(name2,email2,phone2,number)
-    document.getElementById("submit2").style.display = "none"
 }
 
+for(i=0;i<10000;i++){
+    bingo.push(i)
+}
+
+let createTable = function(numeros){
+    let string="";
+
+    for(let numero of numeros){
+        string += `<div class='numero' id=${numero} onclick=addBingo(id)>`
+        string += numero
+        string += "</div>"
+    }
+    return string;
+}
+
+document.getElementById("containerT").innerHTML = createTable(bingo)
+
+const addBingo = (id) => {
+    let rPNumber = numeroE.indexOf(id)
+    if(rPNumber === -1){
+        numeroE.push(id)
+        console.log(numeroE)
+        document.getElementById(id).style.color= "#FF0000"
+    }else{
+        numeroE.splice(rPNumber,1)
+        console.log(numeroE)
+        document.getElementById(id).style.color= "#000"
+    }
+}
 
