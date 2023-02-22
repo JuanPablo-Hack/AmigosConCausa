@@ -81,6 +81,7 @@
                                                 <td class="sell">Télefono</td>
                                                 <td class="trends">Correo</td>
                                                 <td class="attachments">Estado</td>
+                                                <td>Acciones</td>
                                             </tr>
                                             <tr>
                                                 <td>1</td>
@@ -89,6 +90,9 @@
                                                 <td>3141468967</td>
                                                 <td>juanpablodejesusfigueroa@gmail.com</td>
                                                 <td>Cancelado</td>
+                                                <td>
+                                                    Pagado - Eliminado 
+                                                </td>
                                             </tr>
                                         </table>
                                     </div>
