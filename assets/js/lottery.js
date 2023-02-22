@@ -64,14 +64,18 @@ document.getElementById("containerT").innerHTML = createTable(bingo)
 
 const addBingo = (id) => {
     let rPNumber = numeroE.indexOf(id)
-    if(rPNumber === -1){
+    if(rPNumber === -1 && numeroE.length<4){
         numeroE.push(id)
         console.log(numeroE)
         document.getElementById(id).style.color= "#FF0000"
-    }else{
+    }else if(rPNumber != -1){
         numeroE.splice(rPNumber,1)
-        console.log(numeroE)
         document.getElementById(id).style.color= "#000"
+        console.log(numeroE)
+    }else if(numeroE.length===4){
+        Swal.fire({
+            title:"El numero maximo de boletos es de 4"
+        })   
     }
 }
 
