@@ -1255,6 +1255,20 @@ img.mfp-img {
 	transform: scale(1.3);
 }
 
+#btnB{
+	display: flex;
+	cursor: pointer;
+	background-color: #000;
+	width: 10%;
+	margin-top: 20px;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 5px;
+	background-color: #142249;
+	font-size: 20;
+	font-weight: 500;
+}
+
 
 /*	Responsive	==================================================*/ 
 @media (max-width:991px) {

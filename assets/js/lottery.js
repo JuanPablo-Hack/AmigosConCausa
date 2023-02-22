@@ -66,12 +66,10 @@ const addBingo = (id) => {
     let rPNumber = numeroE.indexOf(id)
     if(rPNumber === -1 && numeroE.length<4){
         numeroE.push(id)
-        console.log(numeroE)
         document.getElementById(id).style.color= "#FF0000"
     }else if(rPNumber != -1){
         numeroE.splice(rPNumber,1)
         document.getElementById(id).style.color= "#000"
-        console.log(numeroE)
     }else if(numeroE.length===4){
         Swal.fire({
             title:"El numero maximo de boletos es de 4"
@@ -79,3 +77,22 @@ const addBingo = (id) => {
     }
 }
 
+const sendInfo = () => {
+    let nombreB = document.getElementById("nameB").value;
+    let emailB = document.getElementById("emailB").value;
+    let phoneB = document.getElementById("phoneB").value;
+
+    if([nombreB,emailB,phoneB].includes("")){
+        Swal.fire({
+            title:"Debes completar todos los campos para continuar"
+        })
+    }else if(numeroE.length===0){
+        Swal.fire({
+            title:"Debes escoger almenos un boleto para continuar"
+        })
+    }
+    else{
+        let datos = {nombreB,emailB,phoneB,numeroE}
+        console.log(datos)    
+    }
+}
