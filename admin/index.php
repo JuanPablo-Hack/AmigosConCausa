@@ -13,7 +13,7 @@
     <div class="login-area login-s2">
         <div class="container">
             <div class="login-box ptb--100">
-                <form>
+                <form action="login.php" method="POST">
                     <div class="login-form-head">
                         <h4>Iniciar sesión</h4>
                         <p>Bienvenido al sistema administrador, ingresa tus credeciales para ingresar a tu información</p>
@@ -21,13 +21,13 @@
                     <div class="login-form-body">
                         <div class="form-gp">
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" id="exampleInputEmail1">
+                            <input type="email" id="exampleInputEmail1" name="email">
                             <i class="ti-email"></i>
                             <div class="text-danger"></div>
                         </div>
                         <div class="form-gp">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" id="exampleInputPassword1">
+                            <input type="password" id="exampleInputPassword1" name="password">
                             <i class="ti-lock"></i>
                             <div class="text-danger"></div>
                         </div>

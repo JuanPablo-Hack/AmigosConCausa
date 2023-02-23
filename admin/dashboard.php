@@ -1,3 +1,18 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION['usuario'])){
+        echo'
+            <script>
+                alert("no tienes sesion");
+            </script>
+        ';
+        header("location: ../admin/index.php");
+        session_destroy();
+        die();
+    }
+?>
+
 <!doctype html>
 <html class="no-js" lang="en">
 
