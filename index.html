@@ -629,9 +629,8 @@
                 </div>
                 <div id="containerT"></div>
               </div>
-              <form id="contact" name="contact" method="post" class="text-left">
+              <form id="Form_Orden" name="Form_Orden" method="post" class="text-left">
                 <fieldset>
-          
                   <div class="row">
                     <div
                       class="col-md-4 wow fadeIn animated animated"
@@ -645,7 +644,7 @@
                       <input
                         type="text"
                         name="name"
-                        id="nameB"
+                        id="name"
                         size="30"
                         value=""
                         required
@@ -663,7 +662,7 @@
                       <input
                         type="text"
                         name="email"
-                        id="emailB"
+                        id="email"
                         size="30"
                         value=""
                         required
@@ -678,9 +677,18 @@
                       <input
                         type="text"
                         name="phone"
-                        id="phoneB"
+                        id="phone"
                         size="30"
                         value=""
+                      />
+                    </div>
+                    <div
+                    >
+                      <input
+                      type="hidden"
+                      name="numeros"
+                      id="numeros"
+                      value="1"
                       />
                     </div>
                   </div>
@@ -688,10 +696,13 @@
                     class="wow fadeIn animated"
                     data-wow-delay="0.3"
                     data-wow-duration="1.5s"
-                    id="btnB"
-                    onclick="sendInfo()"
                   >
-                  enviar
+                    <input
+                      id="submit2"
+                      type="submit"
+                      name="submit"
+                      value="Send"
+                    />
                   </div>
                 </fieldset>
               </form>
@@ -709,7 +720,8 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>+
+
       </div>
     </section>
     <!-- Credits 

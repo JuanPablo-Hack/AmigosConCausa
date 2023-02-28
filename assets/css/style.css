@@ -661,6 +661,71 @@ label {
 #contact textarea {
 	height:180px;
 }
+
+/* form data */
+#Form_Ordenarea {
+	text-align:center;
+}
+#Form_Ordenarea .maintitle p.lead {
+	margin-bottom:40px;
+}
+#Form_Ordenarea form {
+	max-width:800px;
+	margin:0px auto;
+}
+#Form_Ordenarea .input-lg,#Form_Ordenarea .btn-lg {
+	padding:20px 25px;
+	height:65px;
+}
+#Form_Orden label {
+	text-transform:uppercase;
+	font-weight:300;
+	 letter-spacing:3px;
+	 font-size:13px;
+}
+#Form_Orden input,#Form_Orden select,#Form_Orden textarea {
+	font-family:inherit;
+	font-size:inherit;
+	line-height:inherit;
+	width:100%;
+	border:0px;
+	color:#333;
+	background-color:#fff;
+	border:0;
+}
+#Form_Orden input,#Form_Orden select {
+		height:40px;
+	margin-bottom:0px;
+}
+#Form_Orden input#submit {
+	width:auto;
+	margin-top:20px;
+	background-color:rgba(0,0,0,0.3);
+	border:0;
+	color:#fff;
+	padding:0px 20px;
+	font-weight:400;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	font-size:14px;
+}
+#Form_Orden input#submit2 {
+	width:auto;
+	margin-top:20px;
+	background-color:rgba(0,0,0,0.3);
+	border:0;
+	color:#fff;
+	padding:0px 20px;
+	font-weight:400;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	font-size:14px;
+}
+#Form_Orden textarea {
+	height:180px;
+}
+
+
 .required {
 	color:#fff;
 }

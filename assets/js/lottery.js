@@ -42,7 +42,6 @@ const checkInfo = () => {
     let name2 = document.getElementById("name2").value;
     let email2 = document.getElementById("email2").value;
     let phone2 = document.getElementById("phone2").value;
-    console.log(name2,email2,phone2,number)
 }
 
 for(i=0;i<10000;i++){
@@ -77,22 +76,54 @@ const addBingo = (id) => {
     }
 }
 
-const sendInfo = () => {
-    let nombreB = document.getElementById("nameB").value;
-    let emailB = document.getElementById("emailB").value;
-    let phoneB = document.getElementById("phoneB").value;
+// const sendInfo = () => {
+//     let name2 = document.getElementById("name2").value;
+//     let email2 = document.getElementById("email2").value;
+//     let phone2 = document.getElementById("phone2").value;
 
-    if([nombreB,emailB,phoneB].includes("")){
+//     if([name2,email2,phone2].includes("")){
+//         Swal.fire({
+//             title:"Debes completar todos los campos para continuar"
+//         })
+//     }else if(numeroE.length===0){
+//         Swal.fire({
+//             title:"Debes escoger almenos un boleto para continuar"
+//         })
+//     }
+//     else{
+//         console.log(email2,name2,phone2)
+//     }
+// }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("Form_Orden").addEventListener("submit", crearOrden);
+  });
+
+  async function crearOrden(e) {
+    e.preventDefault();
+    let arrayString = numeroE.join(",")
+    document.getElementById("numeros").value = arrayString;
+    let form = document.getElementById("Form_Orden");
+    let data = new FormData(form);
+    let response;
+    if(numeroE.length===0){
         Swal.fire({
-            title:"Debes completar todos los campos para continuar"
+            title:"Escoge almenos un boleto para continuar"
         })
-    }else if(numeroE.length===0){
-        Swal.fire({
-            title:"Debes escoger almenos un boleto para continuar"
-        })
-    }
-    else{
-        let datos = {nombreB,emailB,phoneB,numeroE}
-        console.log(datos)    
+    }else{
+        try {
+            response = await fetch("admin/orden_controller.php",{
+              method: "POST",
+              body: data,
+            });
+            Swal.fire({
+                title:"Tu registro se completo correctamente"
+            })
+        }catch (error) {
+            cSwal.fire({
+                title:"Algo fallo en tu registro"
+            })
+        }
     }
 }
