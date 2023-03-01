@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include "conexion.php";
 
     if(!isset($_SESSION['usuario'])){
         echo'
@@ -11,6 +12,7 @@
         session_destroy();
         die();
     }
+
 ?>
 
 <!doctype html>
@@ -18,9 +20,10 @@
 
 <head>
     <?php include './assets/statics/head.php'; ?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <!-- TODO: Hacer que la pagina que se vea completa en el celular y en el escritorio -->
-
 <body>
     <div id="preloader">
         <div class="loader"></div>
@@ -42,7 +45,7 @@
                                         <h4 class="header-title mb-0">Numeros pendientes</h4>
                                     </div>
                                     <div class="d-flex justify-content-between pb-2">
-                                        <h2>4567809,987</h2>
+                                        <h2>5987</h2>
                                     </div>
                                 </div>
                                 <canvas id="coin_sales1" height="100"></canvas>
@@ -70,7 +73,7 @@
                                         <h4 class="header-title mb-0">Cancelados</h4>
                                     </div>
                                     <div class="d-flex justify-content-between pb-2">
-                                        <h2> 4567809,987</h2>
+                                        <h2> 2</h2>
                                     </div>
                                 </div>
                                 <canvas id="coin_sales3" height="100"></canvas>
@@ -80,6 +83,10 @@
                 </div>
                 <!-- TODO: llenar la tabla de la información de los registros de los boletos -->
                 <div class="row mt-5 mb-5">
+                    <form typr="hidden" id="formInfo">
+                        <input type="hidden" id="estado" value="12" name="estado">
+                        <input type="hidden" id="id" value="21" name="id">
+                    </form>
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
@@ -98,17 +105,36 @@
                                                 <td class="attachments">Estado</td>
                                                 <td>Acciones</td>
                                             </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>0003 <br> ,5678 <br> ,9989 <br> ,5647</td>
-                                                <td>Juan Pablo Figueroa</td>
-                                                <td>3141468967</td>
-                                                <td>juanpablodejesusfigueroa@gmail.com</td>
-                                                <td>Cancelado</td>
-                                                <td>
-                                                    Pagado - Eliminado 
-                                                </td>
-                                            </tr>
+                                            <?php
+                                            $nPendientes = "SELECT * FROM info_registros";
+                                            $result= mysqli_query($conexion,$nPendientes);
+                                            while($mostar=mysqli_fetch_array($result)){
+                                                ?>   
+                                            
+                                                <tr>
+                                                    <td><?php echo $mostar['id']?></td>
+                                                    <td><?php echo $mostar['numeros_seleccionado']?></td>
+                                                    <td><?php echo $mostar['nombre']?></td>
+                                                    <td><?php echo $mostar['tel']?></td>
+                                                    <td><?php echo $mostar['email']?></td>
+                                                    <td><?php if($mostar['id_estado']==1){
+                                                        echo "pendiente";
+                                                    }else if($mostar['id_estado']==2){
+                                                        echo "pagado";
+                                                    }
+                                                    ?></td>
+                                                    <td class="containerEstado">
+                                                        <div class="pagado" onclick= "verificar(<?php echo $mostar['id']?>)" id="pagado">
+                                                            <i class="fa-solid fa-check"></i>
+                                                        </div> 
+                                                        <div class="cancelado" onclick="verificar2(<?php echo $mostar['id']?>)" id="cancelado">
+                                                            <i class="fa-solid fa-trash"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            <?php
+                                            }
+                                            ?>
                                         </table>
                                     </div>
                                 </div>
@@ -327,6 +353,10 @@
     <!-- others plugins -->
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/scripts.js"></script>
+
+     <!-- nuevos scripts-->
+    <script src="assets/js/actions.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

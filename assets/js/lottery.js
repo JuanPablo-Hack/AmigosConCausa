@@ -25,12 +25,14 @@ const addNumbers = () => {
     let rPNumber = numbers.indexOf(number)
     if(rPNumber ==-1){
         Swal.fire({
-            title:"Numero agregado correctamente"
+            title:"Numero agregado correctamente",
+            icon:"success"
         })
         numbers.push(number)
     }else{
         Swal.fire({
-            title:"Numero agregado anteriormente, tire de nuevo"
+            title:"Numero agregado anteriormente, tire de nuevo",
+            icon:"error"
         })
         document.getElementById("number").innerHTML = "numero repetido, porfavor tire de nuevo"
         document.getElementById("number2").innerHTML = ""
@@ -71,29 +73,11 @@ const addBingo = (id) => {
         document.getElementById(id).style.color= "#000"
     }else if(numeroE.length===4){
         Swal.fire({
-            title:"El numero maximo de boletos es de 4"
+            title:"El numero maximo de boletos es de 4",
+            icon:"error"
         })   
     }
 }
-
-// const sendInfo = () => {
-//     let name2 = document.getElementById("name2").value;
-//     let email2 = document.getElementById("email2").value;
-//     let phone2 = document.getElementById("phone2").value;
-
-//     if([name2,email2,phone2].includes("")){
-//         Swal.fire({
-//             title:"Debes completar todos los campos para continuar"
-//         })
-//     }else if(numeroE.length===0){
-//         Swal.fire({
-//             title:"Debes escoger almenos un boleto para continuar"
-//         })
-//     }
-//     else{
-//         console.log(email2,name2,phone2)
-//     }
-// }
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -109,7 +93,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let response;
     if(numeroE.length===0){
         Swal.fire({
-            title:"Escoge almenos un boleto para continuar"
+            title:"Escoge almenos un boleto para continuar",
+            icon:"error"
         })
     }else{
         try {
@@ -118,11 +103,13 @@ document.addEventListener("DOMContentLoaded", function () {
               body: data,
             });
             Swal.fire({
-                title:"Tu registro se completo correctamente"
+                title:"Tu registro se completo correctamente",
+                icon:"success"
             })
         }catch (error) {
             cSwal.fire({
-                title:"Algo fallo en tu registro"
+                title:"Algo fallo en tu registro",
+                icon:"error"
             })
         }
     }

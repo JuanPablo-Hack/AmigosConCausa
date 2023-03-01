@@ -924,28 +924,43 @@ table.dbkit-table {
 }
 
 table.dbkit-table tr {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 71px;
-    border: 1px solid transparent;
-    padding: 0 30px;
-    margin: 20px 2px 6px;
-    background: #f5f8f9;
+    align-items: baseline;
+    text-align:start;
+    padding: 15px;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #F8F8F8;
 }
 
 table.dbkit-table tr th,
 table.dbkit-table tr td {
-    border-top: none!important;
+    text-align:center;
 }
+
+/*---------------------------Nuevos Divs-------------------------------- */
+.containerEstado{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.pagado{
+    background-color: #2fd444;
+    padding:10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.cancelado{
+    background-color: #ff0e0e;
+    padding:10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 table.dbkit-table tr:hover {
     border-color: #e4e2f5;
