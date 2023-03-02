@@ -13,7 +13,7 @@
     <div class="login-area login-s2">
         <div class="container">
             <div class="login-box ptb--100">
-                <form action="login.php" method="POST">
+                <form action="../controllers/login.php" method="POST">
                     <div class="login-form-head">
                         <h4>Iniciar sesión</h4>
                         <p>Bienvenido al sistema administrador, ingresa tus credeciales para ingresar a tu información</p>

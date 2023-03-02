@@ -1,6 +1,6 @@
 <?php
 
-include 'conexion.php';
+include "../admin/conexion.php";
 
 $nombre = $_POST["name"];
 $email = $_POST["email"];

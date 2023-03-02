@@ -2,7 +2,7 @@
 
     session_start();
 
-    include 'conexion.php';
+    include "../admin/conexion.php";
     $email = $_POST["email"];
     $password = $_POST["password"];
     $password = hash("sha1",$password);

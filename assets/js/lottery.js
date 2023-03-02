@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }else{
         try {
-            response = await fetch("admin/orden_controller.php",{
+            response = await fetch("controllers/orden_controller.php",{
               method: "POST",
               body: data,
             });

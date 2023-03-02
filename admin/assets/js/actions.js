@@ -19,7 +19,7 @@ const pagar = async (id) => {
     document.getElementById("id").value = id;
     let data = new FormData(form)
     try {
-        response = await fetch("./pagar.php",{
+        response = await fetch("../controllers/pagar.php",{
             method:"POST",
             body:data
         });
@@ -57,7 +57,7 @@ const cancelar = async (id) => {
     document.getElementById("id").value = id;
     let data = new FormData(form)
     try {
-        response = await fetch("./cancelar.php",{
+        response = await fetch("../controllers/cancelar.php",{
             method:"POST",
             body:data
         });
