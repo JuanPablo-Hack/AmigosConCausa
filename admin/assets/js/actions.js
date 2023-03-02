@@ -26,8 +26,10 @@ const pagar = async (id) => {
         Swal.fire({
             title:"La informacion se actualizo correctamente",
             icon:"success"
-            
         });
+        setTimeout(()=>{
+            location.href = location.href
+        },3000);
     } catch (error) {
         Swal.fire({
             title:"Ocurrio un error",
@@ -65,6 +67,9 @@ const cancelar = async (id) => {
             title:"Pedido cancelado correctamente",
             icon:"success"
         });
+        setTimeout(()=>{
+            location.href = location.href
+        },3000);
     }catch (error) {
         Swal.fire({
             title:"Ocurrio un error",

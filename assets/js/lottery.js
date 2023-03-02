@@ -20,6 +20,7 @@ const newNumbers = () => {
 
 }
 
+
 const addNumbers = () => {
     console.log(number)
     let rPNumber = numbers.indexOf(number)
