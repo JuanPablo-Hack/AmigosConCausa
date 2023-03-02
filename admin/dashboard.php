@@ -1,17 +1,17 @@
 <?php
-    session_start();
-    include "conexion.php";
+session_start();
+include "conexion.php";
 
-    if(!isset($_SESSION['usuario'])){
-        echo'
+if (!isset($_SESSION['usuario'])) {
+    echo '
             <script>
                 alert("no tienes sesion");
             </script>
         ';
-        header("location: ../admin/index.php");
-        session_destroy();
-        die();
-    }
+    header("location: ../admin/index.php");
+    session_destroy();
+    die();
+}
 
 ?>
 
@@ -24,6 +24,7 @@
 
 </head>
 <!-- TODO: Hacer que la pagina que se vea completa en el celular y en el escritorio -->
+
 <body>
     <div id="preloader">
         <div class="loader"></div>
@@ -82,7 +83,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- TODO: llenar la tabla de la información de los registros de los boletos -->
                 <div class="row mt-5 mb-5">
                     <form typr="hidden" id="formInfo">
                         <input type="hidden" id="estado" value="12" name="estado">
@@ -108,27 +108,27 @@
                                             </tr>
                                             <?php
                                             $nPendientes = "SELECT * FROM info_registros";
-                                            $result= mysqli_query($conexion,$nPendientes);
-                                            while($mostar=mysqli_fetch_array($result)){
-                                                ?>   
-                                            
+                                            $result = mysqli_query($conexion, $nPendientes);
+                                            while ($mostar = mysqli_fetch_array($result)) {
+                                            ?>
+
                                                 <tr>
-                                                    <td><?php echo $mostar['id']?></td>
-                                                    <td><?php echo $mostar['numeros_seleccionado']?></td>
-                                                    <td><?php echo $mostar['nombre']?></td>
-                                                    <td><?php echo $mostar['tel']?></td>
-                                                    <td><?php echo $mostar['email']?></td>
-                                                    <td><?php if($mostar['id_estado']==1){
-                                                        echo "pendiente";
-                                                    }else if($mostar['id_estado']==2){
-                                                        echo "pagado";
-                                                    }
-                                                    ?></td>
+                                                    <td><?php echo $mostar['id'] ?></td>
+                                                    <td><?php echo $mostar['numeros_seleccionado'] ?></td>
+                                                    <td><?php echo $mostar['nombre'] ?></td>
+                                                    <td><?php echo $mostar['tel'] ?></td>
+                                                    <td><?php echo $mostar['email'] ?></td>
+                                                    <td><?php if ($mostar['id_estado'] == 1) {
+                                                            echo "pendiente";
+                                                        } else if ($mostar['id_estado'] == 2) {
+                                                            echo "pagado";
+                                                        }
+                                                        ?></td>
                                                     <td class="containerEstado">
-                                                        <div class="pagado" onclick= "verificar(<?php echo $mostar['id']?>)" id="pagado">
+                                                        <div class="pagado" onclick="verificar(<?php echo $mostar['id'] ?>)" id="pagado">
                                                             <i class="fa-solid fa-check"></i>
-                                                        </div> 
-                                                        <div class="cancelado" onclick="verificar2(<?php echo $mostar['id']?>)" id="cancelado">
+                                                        </div>
+                                                        <div class="cancelado" onclick="verificar2(<?php echo $mostar['id'] ?>)" id="cancelado">
                                                             <i class="fa-solid fa-trash"></i>
                                                         </div>
                                                     </td>
@@ -355,7 +355,7 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/scripts.js"></script>
 
-     <!-- nuevos scripts-->
+    <!-- nuevos scripts-->
     <script src="assets/js/actions.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
