@@ -1,8 +1,10 @@
 let numbers = [];
 let number = 0; 
 
-let bingo = [] //numeros del 0 al 10000
-let numeroE = [] //numero para seleccionar el bingo 
+let bingo = []; //numeros del 0 al 10000
+let numeroE = []; //numero para seleccionar el bingo 
+
+let numerosP = []; 
 
 const newNumbers = () => {
     number = Math.floor(Math.random() * (50 - 1 )+ 1)
@@ -47,9 +49,30 @@ const checkInfo = () => {
     let phone2 = document.getElementById("phone2").value;
 }
 
-for(i=0;i<10000;i++){
-    bingo.push(i)
+
+
+const numeros_seleccionado = async () => {
+    
+    for(i=0;i<10000;i++){
+        bingo.push(i);
+    }
+
+    try {
+        await fetch("controllers/numeros_pendientes.php")
+        .then(res => res.json())
+        .then(data => {
+            data.forEach(element => {
+                numerosP.push(element.numeros_seleccionado)
+            });
+        });
+        console.log(numerosP)
+    } catch (error) {
+        console.log(error)
+    }
+    document.getElementById("containerT").innerHTML = createTable(bingo)
 }
+
+numeros_seleccionado()
 
 let createTable = function(numeros){
     let string="";
@@ -62,7 +85,7 @@ let createTable = function(numeros){
     return string;
 }
 
-document.getElementById("containerT").innerHTML = createTable(bingo)
+
 
 const addBingo = (id) => {
     let rPNumber = numeroE.indexOf(id)
@@ -106,7 +129,10 @@ document.addEventListener("DOMContentLoaded", function () {
             Swal.fire({
                 title:"Tu registro se completo correctamente",
                 icon:"success"
-            })
+            });
+            setTimeout(()=>{
+                location.href = location.href
+            },2000);
         }catch (error) {
             cSwal.fire({
                 title:"Algo fallo en tu registro",

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "conexion.php";
+include "../config/conexion.php";
 
 if (!isset($_SESSION['usuario'])) {
     echo '
@@ -122,6 +122,8 @@ if (!isset($_SESSION['usuario'])) {
                                                             echo "pendiente";
                                                         } else if ($mostar['id_estado'] == 2) {
                                                             echo "pagado";
+                                                        }else {
+                                                            echo "cancelado";
                                                         }
                                                         ?></td>
                                                     <td class="containerEstado">

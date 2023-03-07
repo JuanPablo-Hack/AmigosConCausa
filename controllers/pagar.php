@@ -1,6 +1,6 @@
 <?php
 
-include "../admin/conexion.php";
+include "../config/conexion.php";
 
 $estado= $_POST["estado"];
 $id = $_POST["id"];

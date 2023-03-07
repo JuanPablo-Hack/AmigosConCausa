@@ -55,7 +55,7 @@ const verificar2 = (id) => {
 
 const cancelar = async (id) => {
     let form = document.getElementById("formInfo");
-    document.getElementById("estado").value = "2";
+    document.getElementById("estado").value = "3";
     document.getElementById("id").value = id;
     let data = new FormData(form)
     try {
