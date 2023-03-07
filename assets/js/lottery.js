@@ -5,6 +5,7 @@ let bingo = []; //numeros del 0 al 10000
 let numeroE = []; //numero para seleccionar el bingo 
 
 let numerosP = []; 
+let numerosPi = []
 
 const newNumbers = () => {
     number = Math.floor(Math.random() * (50 - 1 )+ 1)
@@ -62,14 +63,26 @@ const numeros_seleccionado = async () => {
         .then(res => res.json())
         .then(data => {
             data.forEach(element => {
-                numerosP.push(element.numeros_seleccionado)
+                numerosP.push(element.numeros_seleccionado.split(','));
             });
         });
-        console.log(numerosP)
+
+        numerosP.forEach(element => {
+            element.forEach(element => {
+                numerosPi.push(parseInt(element))
+            })
+        });
+
+        numerosPi.forEach(element => {
+            let rPNumber = bingo.indexOf(element);
+            if(rPNumber != -1){
+                bingo.splice(rPNumber,1)
+            }
+        });    
+        document.getElementById("containerT").innerHTML = createTable(bingo)
     } catch (error) {
         console.log(error)
     }
-    document.getElementById("containerT").innerHTML = createTable(bingo)
 }
 
 numeros_seleccionado()
