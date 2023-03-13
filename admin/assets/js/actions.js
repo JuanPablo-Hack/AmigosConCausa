@@ -1,3 +1,6 @@
+let numerosP = 0; 
+let numerosPA = 0; 
+
 const verificar = (id) => {
     Swal.fire({
         title:"¿Seguro?",
@@ -77,3 +80,22 @@ const cancelar = async (id) => {
         });
     }
 }
+
+const numerosPPT = async () => {
+    try {
+        await fetch("../controllers/numerosPT.php")
+        .then(res => res.json())
+        .then(data => numerosP = data.length)
+        document.getElementById("numerosPT").textContent = numerosP; 
+
+        await fetch("../controllers/numerosPA.php")
+        .then(res => res.json())
+        .then(data => numerosPA = data.length)
+        document.getElementById("numerosPA").textContent = numerosPA; 
+
+    } catch (error) {
+        
+    }
+}
+
+numerosPPT()

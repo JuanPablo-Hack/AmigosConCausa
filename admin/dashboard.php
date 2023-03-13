@@ -42,19 +42,10 @@ if (!isset($_SESSION['usuario'])) {
                             <div class="single-report mb-xs-30"  id="containerPendientes">
                                 <div class="s-report-inner pr--20 pt--30 mb-3">                                    <div class="s-report-title d-flex justify-content-between">
                                     <div class="icon"><i class="fa fa-btc"></i></div>
-                                    <h4 class="header-title mb-0">Numeros pendientes de pagar</h4>
+                                    <h4 class="header-title mb-0">Pedidos pendientes</h4>
                                 </div>
                                     <div class="numeros">
-                                        <?php
-                                        $nPendientes = "SELECT * FROM info_registros where id_estado ='1' ";
-                                        $result= mysqli_query($conexion,$nPendientes);
-                                        while($mostar=mysqli_fetch_array($result)){
-                                            ?>   
-                                            
-                                            <h5 id="numerosP"><?php echo $mostar['numeros_seleccionado']?>  </h5>
-                                        <?php
-                                        }
-                                        ?>
+                                        <h5 id="numerosPT"></h5>
                                     </div>
                                 </div>
                             </div>
@@ -64,19 +55,10 @@ if (!isset($_SESSION['usuario'])) {
                                 <div class="s-report-inner pr--20 pt--30 mb-3">
                                     <div class="icon"><i class="fa-sharp fa-regular fa-cart-shopping"></i></div>
                                     <div class="s-report-title d-flex justify-content-between">
-                                        <h4 class="header-title mb-0">Numeros Pagados</h4>
+                                        <h4 class="header-title mb-0">Pedidos Pagados</h4>
                                     </div>
                                     <div class="numeros">
-                                    <?php
-                                        $nPendientes = "SELECT * FROM info_registros where id_estado ='2' ";
-                                        $result= mysqli_query($conexion,$nPendientes);
-                                        while($mostar=mysqli_fetch_array($result)){
-                                            ?>   
-                                            
-                                            <h5 id="numerosP"><?php echo $mostar['numeros_seleccionado']?>  </h5>
-                                        <?php
-                                        }
-                                        ?>
+                                        <h5 id="numerosPA"></h5>
                                     </div>
                                 </div>
                             </div>

@@ -99,7 +99,6 @@ let createTable = function(numeros){
 }
 
 
-
 const addBingo = (id) => {
     let rPNumber = numeroE.indexOf(id)
     if(rPNumber === -1 && numeroE.length<4){
