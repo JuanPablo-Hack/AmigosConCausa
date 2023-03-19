@@ -23,6 +23,9 @@
                     <a href="#about">Acerca de</a>
                 </li>
                 <li>
+                    <a href="#about">Premios</a>
+                </li>
+                <li>
                     <a href="#faq">FAQ</a>
                 </li>
                 <li>

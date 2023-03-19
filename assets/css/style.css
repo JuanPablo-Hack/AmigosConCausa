@@ -379,8 +379,8 @@ label {
 	width:100%;
 	top:0;
 	position:fixed;
-	background-image:url("../img/bg_amigos_con_causa.jpg");
-	background-position:center center;
+	background-image:url("../img/bg_principal.png");
+	
 	background-repeat:no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;

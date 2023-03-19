@@ -5,7 +5,7 @@
                 <div class="herotext">
                     <h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.1s">
                         SORTEOS
-                        <span class="lighter">CON CAUSA</span>
+                        <span class="lighter">ENTRE AMIGOS MANZANILLO, CENTRO</span>
                     </h1>
                     <p class="lead wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">
                         Adquiere un boleto para ayudar a personas en situaciones de
