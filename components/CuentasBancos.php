@@ -56,6 +56,7 @@
                                 002095901605266526
                             </p>
                         </div>
+                        <br> <br>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6">
@@ -74,6 +75,7 @@
                                 072095010846994507
                             </p>
                         </div>
+                        <br> <br> <br>
                     </div>
                 </div>
             </div>
