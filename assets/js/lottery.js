@@ -101,17 +101,18 @@ let createTable = function(numeros){
 
 const addBingo = (id) => {
     let rPNumber = numeroE.indexOf(id)
-    if(rPNumber === -1 && numeroE.length<4){
+    if(rPNumber === -1 && numeroE.length<20){
         numeroE.push(id)
         document.getElementById(id).style.color= "#FF0000"
+        console.log(numeroE.length)
     }else if(rPNumber != -1){
         numeroE.splice(rPNumber,1)
         document.getElementById(id).style.color= "#000"
-    }else if(numeroE.length===4){
+    }else if (numeroE.length===20){
         Swal.fire({
-            title:"El numero maximo de boletos es de 4",
+            title:"20 boletos es el maximo",
             icon:"error"
-        })   
+        })
     }
 }
 
@@ -127,12 +128,31 @@ document.addEventListener("DOMContentLoaded", function () {
     let form = document.getElementById("Form_Orden");
     let data = new FormData(form);
     let response;
-    if(numeroE.length===0){
+    if(numeroE.length<5){
         Swal.fire({
-            title:"Escoge almenos un boleto para continuar",
+            title:"Escoge almenos 5 boletos para participar en el sorteo",
             icon:"error"
         })
-    }else{
+    }else if(numeroE.length===5){
+        try {
+            response = await fetch("controllers/orden_controller.php",{
+              method: "POST",
+              body: data,
+            });
+            Swal.fire({
+                title:"Tu registro se completo correctamente",
+                icon:"success"
+            });
+            setTimeout(()=>{
+                location.href = location.href
+            },2000);
+        }catch (error) {
+            cSwal.fire({
+                title:"Algo fallo en tu registro",
+                icon:"error"
+            })
+        }
+    }else if(numeroE.length===10){
         try {
             response = await fetch("controllers/orden_controller.php",{
               method: "POST",
@@ -152,4 +172,36 @@ document.addEventListener("DOMContentLoaded", function () {
             })
         }
     }
+    else if (numeroE.length<10){
+        Swal.fire({
+            title:"La cantidad escogida no es valida, escoga 10 boletos para continuar",
+            icon:"error"
+        })
+    }else if (numeroE.length<20){
+        Swal.fire({
+            title:"La cantidad escogida no es valida, escoga 20 boletos para continuar",
+            icon:"error"
+        })
+    }else if(numeroE.length===20){
+        try {
+            response = await fetch("controllers/orden_controller.php",{
+              method: "POST",
+              body: data,
+            });
+            Swal.fire({
+                title:"Tu registro se completo correctamente",
+                icon:"success"
+            });
+            setTimeout(()=>{
+                location.href = location.href
+            },2000);
+        }catch (error) {
+            cSwal.fire({
+                title:"Algo fallo en tu registro",
+                icon:"error"
+            })
+        }
+    }
+    
+    
 }
