@@ -6,6 +6,7 @@
   "background_color": "#fdfdfd",
   "theme_color": "#db4938",
   "orientation": "portrait-primary",
+  "description": "Amigos con causa una noble acción cambia mucho en el mundo.",
   "icons": [
     {
       "src": "assets/img/icons/logo_72x72.png",
