@@ -6,6 +6,7 @@
         <a href="https://jupitersoft.tech/">JupiterSoft</a>
     </section>
 </footer>
+<script src="js/app.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/waypoints.min.js"></script>
