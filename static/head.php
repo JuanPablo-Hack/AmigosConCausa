@@ -7,7 +7,7 @@
 <meta property="og:url" content="https://amigosconcausa.com/" />
 <meta property="og:tittle" content="Amigos Con Causa" />
 <meta property="og:description" content="Amigos con causa generando sorteos para mejorar el entorno de la sociedad del bello puerto de Manzanillo,Colima" />
-<meta property="og:image" content="Amigos Con Causa" />
+<meta property="og:image" content="https://amigosconcausa.com/assets/img/logo_og.png" />
 
 <link rel="manifest" href="manifest.json" />
 <link rel="shortcut icon" href="assets/img/logo.ico">
