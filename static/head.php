@@ -2,7 +2,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Sorteos con causa para mejorar la vida de la sociedad en base, de juegos interactivos con la gente" />
 <meta name="author" content="Jupiter Soft Tech Company" />
-<meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="manifest" href="manifest.json" />
 <title>Amigos con causa</title>
 <link rel="shortcut icon" href="assets/img/logo.ico">
@@ -24,7 +23,7 @@
 <link rel="apple-touch-startup-image" href="assets/img/splash/launch-1536x2048.png" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
 <link rel="apple-touch-startup-image" href="assets/img/splash/launch-1668x2224.png" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
 <link rel="apple-touch-startup-image" href="assets/img/splash/launch-2048x2732.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
-
+<meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 <link rel="stylesheet" href="assets/css/animate.min.css" />
 <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
