@@ -1,9 +1,15 @@
 <meta charset="utf-8" />
+<title>Amigos con causa</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Sorteos con causa para mejorar la vida de la sociedad en base, de juegos interactivos con la gente" />
 <meta name="author" content="Jupiter Soft Tech Company" />
+<!-- METAS PARA LA PERZONALIACION DEL LINK -->
+<meta property="og:url" content="https://amigosconcausa.com/" />
+<meta property="og:tittle" content="Amigos Con Causa" />
+<meta property="og:description" content="Amigos con causa generando sorteos para mejorar el entorno de la sociedad del bello puerto de Manzanillo,Colima" />
+<meta property="og:image" content="Amigos Con Causa" />
+
 <link rel="manifest" href="manifest.json" />
-<title>Amigos con causa</title>
 <link rel="shortcut icon" href="assets/img/logo.ico">
 <link href="assets/img/logo.ico" rel="icon">
 <!-- PWA ICONS SECTION -->
