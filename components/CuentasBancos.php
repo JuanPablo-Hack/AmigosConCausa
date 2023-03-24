@@ -20,7 +20,6 @@
                             compañía de la sociedad.
                         </p>
                     </div>
-<<<<<<< HEAD
                     <table class="tablaC">
                         <tr>
                             <th>BANCO</th>
@@ -63,65 +62,6 @@
                             <td>0-60320000969167953</td>
                         </tr>
                     </table>
-=======
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                        <img src="./assets/img/bbva.png" alt="" />
-                        <h3>
-                            Bancomer
-                        </h3>
-                        <div class="text-left">
-                            <h3><strong>No tarjeta</strong></h3>
-                            <p>
-                                4152 3140 4736 5039
-                            </p>
-                            <h3><strong>Clabe</strong></h3>
-                            <p>
-                                012180015467932106
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                        <img src="./assets/img/banamex.png" alt="" />
-                        <h3>
-                            Banamex
-
-                        </h3>
-                        <div class="text-left">
-                            <h3><strong>No tarjeta</strong></h3>
-                            <p>
-                                5256 7822 4048 8898
-                            </p>
-                            <h3><strong>Clabe Interbancaria</strong></h3>
-                            <p>
-                                002095901605266526
-                            </p>
-                        </div>
-                        <br> <br>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                        <img src="./assets/img/banorte.png" alt="" />
-                        <h3>
-                            Banorte
-                        </h3>
-                        <div class="text-left">
-                            <h3><strong>No tarjeta</strong></h3>
-                            <p>
-                                4915 6630 5495 0459
-                            </p>
-                            <h3><strong>Clabe</strong></h3>
-                            <p>
-                                072095010846994507
-                            </p>
-                        </div>
-                        <br> <br> <br>
-                    </div>
->>>>>>> 55f922883b0bbe0b481cb7d757df5b6b78414f81
                 </div>
             </div>
         </div>
