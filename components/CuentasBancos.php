@@ -23,43 +23,33 @@
                     <table class="tablaC">
                         <tr>
                             <th>BANCO</th>
-                            <th>CUENTA</th>
+                            <th>No tarjeta</th>
                             <th>C.L.A.B.E</th>
                         </tr>
                         <tr>
                             <td><img src="./assets/img/banamex.png"></td>
-                            <td>3-805496680</td>
-                            <td>0-02320038054966808</td>
+                            <td>5256782240488898</td>
+                            <td>002095901605266526</td>
                         </tr>
                         <tr>
                             <td><img src="./assets/img/bbva.png"></td>
-                            <td>0-452847353</td>
-                            <td>0-12320004528473537</td>
-                        </tr>
-                        <tr>
-                            <td><img src="./assets/img/santander.png"></td>
-                            <td>6-5500776119</td>
-                            <td>0-14320655007761191</td>
-                        </tr>
-                        <tr>
-                            <td><img src="./assets/img/scotiabank.png"></td>
-                            <td>0-1005831202</td>
-                            <td>0-44320010058312023</td>
-                        </tr>
-                        <tr>
-                            <td><img src="./assets/img/HSBC.png"></td>
-                            <td>4-018653535</td>
-                            <td>0-21320040186535354</td>
+                            <td>4152314047365039</td>
+                            <td>012180015467932106</td>
                         </tr>
                         <tr>
                             <td><img src="./assets/img/banorte.png"></td>
-                            <td>0-313005232</td>
-                            <td>0-72320003130052329</td>
+                            <td>4915663054930459</td>
+                            <td>0720950108469994507</td>
                         </tr>
                         <tr>
-                            <td><img src="./assets/img/bansi.png"></td>
-                            <td>0-0096916795</td>
-                            <td>0-60320000969167953</td>
+                            <td><img src="./assets/img/banorte.png"></td>
+                            <td>4189143051430570</td>
+                            <td>0720950112059805973</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/img/banorte.png"></td>
+                            <td>4915663054950459</td>
+                            <td>072095010846994507</td>
                         </tr>
                     </table>
                 </div>
