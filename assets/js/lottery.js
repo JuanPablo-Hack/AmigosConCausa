@@ -55,7 +55,21 @@ const checkInfo = () => {
 const numeros_seleccionado = async () => {
     
     for(i=0;i<10000;i++){
-        bingo.push(i);
+        let a = "000"
+        let b = "00"
+        let c = "0"
+        if(i <10){
+           let format  = a+i
+           bingo.push(format)
+        }else if(i<100){
+            let format = b+i
+            bingo.push(format)
+        }else if(i<1000){
+            let format = c+i
+            bingo.push(format)
+        }else{
+            bingo.push(i)
+        }
     }
 
     try {
