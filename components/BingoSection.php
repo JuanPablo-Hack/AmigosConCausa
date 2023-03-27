@@ -1,13 +1,40 @@
 <section id="bingo" class="parallax section" style="background-image: url(./assets/img/trebol.jpg)">
     <div class="wrapsection">
         <div class="parallax-overlay" style="background-color: #01b0d1; opacity: 0.9"></div>
-
         <div class="container">
+            <div class="maintitle">
+                <h3 class="section-title">
+                    <strong>
+                        Estos son los precios por
+                        <span class="lighter">oportunidades para realizar el sorteo</span>
+                    </strong>
+                    sigue las indicaciones que se muestran en la siguiente tabla.
+                </h3>
+                <table class="tablaC">
+                    <tr>
+                        <th>Número <br> Oportunidades</th>
+                        <th>Precio</th>
+
+                    </tr>
+                    <tr>
+                        <td>5 números</td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <td>10 números</td>
+                        <td>$180.00</td>
+                    </tr>
+                    <tr>
+                        <td>20 números</td>
+                        <td>$350.00</td>
+                    </tr>
+                </table>
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <div id="containerBingo">
                         <div class="maintitle">
-                            <h3 class="section-title">Bingo</h3>
+                            <h3 class="section-title">Números Participantes</h3>
                         </div>
                         <div id="containerT"></div>
                     </div>

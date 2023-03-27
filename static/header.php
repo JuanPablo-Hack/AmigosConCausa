@@ -7,13 +7,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!-- Your Logo -->
             <a href="#hero" class="navbar-brand">
                 AMIGOS CON
                 <span class="lighter">CAUSA</span>
             </a>
         </div>
-        <!-- Start Navigation -->
         <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
             <ul class="nav navbar-nav">
                 <li>
@@ -30,6 +28,12 @@
                 </li>
                 <li>
                     <a href="#bingo">Bingo</a>
+                </li>
+                <li>
+                    <a href="./aviso_privacidad.pdf" download="Aviso de Privacidad Amigos Con Causa">Aviso de Privacidad</a>
+                </li>
+                <li>
+                    <a href="./Términos y Condiciones.pdf" download="Términos y Condiciones">Términos y Condiciones</a>
                 </li>
             </ul>
         </nav>
