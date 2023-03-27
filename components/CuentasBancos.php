@@ -6,7 +6,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <!-- Title -->
                     <div class="maintitle">
                         <h3 class="section-title">
                             <strong>
@@ -45,11 +44,6 @@
                             <td><img src="./assets/img/banorte.png"></td>
                             <td>4189143051430570</td>
                             <td>0720950112059805973</td>
-                        </tr>
-                        <tr>
-                            <td><img src="./assets/img/banorte.png"></td>
-                            <td>4915663054950459</td>
-                            <td>072095010846994507</td>
                         </tr>
                     </table>
                 </div>

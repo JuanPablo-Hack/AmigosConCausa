@@ -5,13 +5,11 @@
                 <div class="col-md-12 sol-sm-12">
                     <div class="maintitle">
                         <h3 class="section-title">
-                            Términos y
-                            <span class="wow bounceInRight">Condiciones</span>
+                            Preguntas má<s></s>
+                            <span class="wow bounceInRight">Frecuentes</span>
                         </h3>
                         <p class="lead">
-                            Sed gravida, tortor in tincidunt sagittis, ligula lacus
-                            ultrices justo, sed mattis sem sem ut ex. Ut nunc elit, auctor
-                            et quam sit amet, convallis purus.
+                            Aquí están de las preguntas mas frecuentes dentro de las reglas de juego, para que podamos brindarle un mejor servicio de calidad por lo que tenemos estás respuestas para ti.
                         </p>
                     </div>
                 </div>
@@ -24,7 +22,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                            How old can I be?
+                                            Quiénes pueden participar?
                                         </a>
                                     </h4>
                                 </div>
@@ -40,7 +38,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                            Can we donate clothes?
+                                            Como puedo comenzar a participar?
                                         </a>
                                     </h4>
                                 </div>
@@ -56,7 +54,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                            How many miles to run ?
+                                            Como puedo realizar mi pago ?
                                         </a>
                                     </h4>
                                 </div>
@@ -78,7 +76,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                            Can we show sponsors?
+                                            Cuales son los premios?
                                         </a>
                                     </h4>
                                 </div>
@@ -94,7 +92,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
-                                            Are there free drinks?
+                                            Como se escoge al ganador?
                                         </a>
                                     </h4>
                                 </div>
@@ -110,7 +108,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-                                            Is medical exam free ?
+                                            Cuanto tiempo tengo para pagar mi boleto ?
                                         </a>
                                     </h4>
                                 </div>
@@ -132,7 +130,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
-                                            Do you help with passport?
+                                            Cuantas oportunidades puedo adquirir por sorteo?
                                         </a>
                                     </h4>
                                 </div>
@@ -148,7 +146,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
-                                            What routes should one follow?
+                                            Que día se muestran los resultados?
                                         </a>
                                     </h4>
                                 </div>
@@ -164,7 +162,7 @@
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
-                                            Do I have to pay a tax?
+                                            Cuantas veces se realiza el sorteo en el año?
                                         </a>
                                     </h4>
                                 </div>
