@@ -4,18 +4,12 @@
             <div class="col-md-5">
                 <div class="herotext">
                     <h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.1s">
-                        SORTEOS
-                        <span class="lighter">ENTRE AMIGOS MANZANILLO, CENTRO</span>
+                        RIFA ENTRE AMIGOS
+                        <span class="lighter"> MANZANILLO, CENTRO</span>
                     </h1>
                     <p class="lead wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">
-                        Adquiere un boleto para ayudar a personas en situaciones de
+                        Adquiere tus números de boletos para ayudar a personas en situaciones de
                         peligro para brindarles una mejor oportunidad de vida.
-                    </p>
-                    <p>
-                        <a href="#bingo" class="btn btn-default btn-lg wow fadeInLeft" role="button">
-                            Bingo
-                        </a>
-                        &nbsp;
                     </p>
                 </div>
             </div>
