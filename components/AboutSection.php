@@ -1,5 +1,5 @@
 <section id="about" class="parallax section" style="
-        background-image: url(http://themepush.com/demo/runcharity/assets/img/1.jpg);
+        background-image: url(https://themepush.com/demo/runcharity/assets/img/1.jpg);
       ">
     <div class="wrapsection">
         <div class="parallax-overlay" style="background-color: #01b0d1; opacity: 0.9"></div>
