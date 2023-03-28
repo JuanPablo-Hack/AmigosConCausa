@@ -28,9 +28,7 @@
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        How old. This is the detailed answer. It is a long
-                                        established fact that a reader will be distracted by the
-                                        readable content of a page when looking at its layout.
+                                        Para poder ser participante dentro de nuestro sorteo es indispensable que seas mayor de 18 años, y contar con una credencial de elector vigente.
                                     </div>
                                 </div>
                             </div>
@@ -44,9 +42,7 @@
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Can we? This is the detailed answer. It is a long
-                                        established fact that a reader will be distracted by the
-                                        readable content of a page when looking at its layout.
+                                        Para comenzar a participar usted tiene que elegir dentro de los números a seleccionar, los números con los que desea participar, realizar su pago mediante deposito o transferencia y listo, usted ya será participante.
                                     </div>
                                 </div>
                             </div>
