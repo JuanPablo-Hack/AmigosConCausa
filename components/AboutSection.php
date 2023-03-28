@@ -9,11 +9,7 @@
                     <!-- Title -->
                     <div class="maintitle">
                         <h3 class="section-title">
-                            <strong>
-                                SORTEOS
-                                <span class="lighter">CON CAUSA</span>
-                            </strong>
-                            para brindar un mejor bienestar en la sociedad
+                            SORTEOS CON CAUSA para brindar un mejor bienestar en la sociedad
                         </h3>
                         <p class="lead">
                             Somos un grupo de amigos unidos para lograr causas justas en

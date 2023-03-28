@@ -26,22 +26,22 @@
                             <th>C.L.A.B.E</th>
                         </tr>
                         <tr>
-                            <td><img src="./assets/img/banamex.png"></td>
+                            <td><img src="./assets/img/banamex.png" alt="banamex"></td>
                             <td>5256782240488898</td>
                             <td>002095901605266526</td>
                         </tr>
                         <tr>
-                            <td><img src="./assets/img/bbva.png"></td>
+                            <td><img src="./assets/img/bbva.png" alt="bbva"></td>
                             <td>4152314047365039</td>
                             <td>012180015467932106</td>
                         </tr>
                         <tr>
-                            <td><img src="./assets/img/banorte.png"></td>
+                            <td><img src="./assets/img/banorte.png" alt="banorte"></td>
                             <td>4915663054930459</td>
                             <td>0720950108469994507</td>
                         </tr>
                         <tr>
-                            <td><img src="./assets/img/banorte.png"></td>
+                            <td><img src="./assets/img/banorte.png" alt="banorte"></td>
                             <td>4189143051430570</td>
                             <td>0720950112059805973</td>
                         </tr>
