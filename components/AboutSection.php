@@ -6,7 +6,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <!-- Title -->
                     <div class="maintitle">
                         <h3 class="section-title">
                             SORTEOS CON CAUSA para brindar un mejor bienestar en la sociedad
