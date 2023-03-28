@@ -75,6 +75,8 @@ pre {
 	font-weight:100;
 }
 img {
+	width: 495;
+	height:330;
 	max-width: 100%;
 }
 /*	Section	==================================================*/
@@ -1279,6 +1281,9 @@ img.mfp-img {
 #btn-modal:checked ~ .container-modal{
 	display: flex;
 }
+
+
+
 /*-------------------------CUENTAS-----------------------*/
 
 .tablaC{

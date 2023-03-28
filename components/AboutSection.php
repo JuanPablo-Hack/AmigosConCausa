@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                        <img src="http://themepush.com/demo/runcharity/assets/img/dummy.jpg" alt="" />
+                        <img src="http://themepush.com/demo/runcharity/assets/img/dummy.jpg" alt="maraton" />
                         <h3>
                             Quienes
                             <br />

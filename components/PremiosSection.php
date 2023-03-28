@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                        <img src="./assets/img/premio_honda.png" alt="" />
+                        <img src="./assets/img/premio_honda.png" alt="Honda XR 150" id="imgsPremio"/>
                         <h3>
                             Primer Lugar
                         </h3>
@@ -37,7 +37,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                        <img src="./assets/img/premio_uno.jpg" alt="" />
+                        <img src="./assets/img/premio_uno.jpg" alt="Italika 125 z" class="imgsPremio"/>
                         <h3>
                             Segundo Lugar
                         </h3>
