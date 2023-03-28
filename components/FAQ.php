@@ -56,9 +56,7 @@
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        So how many. This is the detailed answer. It is a long
-                                        established fact that a reader will be distracted by the
-                                        readable content of a page when looking at its layout.
+                                        Para realizar tu pago te vamos a mandar un comprobante donde tendrás que hacer tu depósito a las cuentas participantes, con el concepto de la referencia de tu comprobante.
                                     </div>
                                 </div>
                             </div>
@@ -78,9 +76,7 @@
                                 </div>
                                 <div id="collapseFour" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Sponsors. This is the detailed answer. It is a long
-                                        established fact that a reader will be distracted by the
-                                        readable content of a page when looking at its layout.
+                                        Los premios, son dos increibles motocicletas para que puedas viajar en ellas comodamente, puedes consultar los premios en el apartado de <a href="#premios">premios</a>
                                     </div>
                                 </div>
                             </div>
@@ -94,9 +90,7 @@
                                 </div>
                                 <div id="collapseFive" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Drinks. This is the detailed answer. It is a long
-                                        established fact that a reader will be distracted by the
-                                        readable content of a page when looking at its layout.
+                                        Los dos ganadores se escogen con los 4 ultimos numeros de la lotería nacional.
                                     </div>
                                 </div>
                             </div>
@@ -110,9 +104,7 @@
                                 </div>
                                 <div id="collapseSix" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Medical. This is the detailed answer. It is a long
-                                        established fact that a reader will be distracted by the
-                                        readable content of a page when looking at its layout.
+                                        Tienes un lapso aproximado de 24 horas para llevar a cabo el pago del comprobante de tus boletos, para poder ser acreedor de ellos.
                                     </div>
                                 </div>
                             </div>
@@ -132,9 +124,7 @@
                                 </div>
                                 <div id="collapseSeven" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Passport. This is the detailed answer. It is a long
-                                        established fact that a reader will be distracted by the
-                                        readable content of a page when looking at its layout.
+                                        Las que sean necesarias para poder participar en el apartado de los <a href="#bingo">numeros seleccionados</a> puedes ver la tabla de oportunidades que tienes para poder adquirir tus números.
                                     </div>
                                 </div>
                             </div>
@@ -148,9 +138,7 @@
                                 </div>
                                 <div id="collapseEight" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Routes. This is the detailed answer. It is a long
-                                        established fact that a reader will be distracted by the
-                                        readable content of a page when looking at its layout.
+                                        El día que se lleve acabo la lotería nacional, aún así se estará avisando de las fechas días antes por las redes sociales las cuales puedes consultar en el píe de página.
                                     </div>
                                 </div>
                             </div>
@@ -164,9 +152,7 @@
                                 </div>
                                 <div id="collapseNine" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Tax. This is the detailed answer. It is a long
-                                        established fact that a reader will be distracted by the
-                                        readable content of a page when looking at its layout.
+                                        Por el momento solo se realizará el vigente hasta previo aviso.
                                     </div>
                                 </div>
                             </div>
