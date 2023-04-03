@@ -5,7 +5,6 @@
                 <h4 class="page-title pull-left">Panel de control</h4>
             </div>
         </div>
-        <!-- TODO: Poner el cuadro de color azul marino  -->
         <div class="col-sm-6 clearfix">
             <div class="user-profile pull-right">
                 <img class="avatar user-thumb" src="assets/images/logo_og.png" alt="avatar">
