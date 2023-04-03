@@ -11,12 +11,12 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Números</th>
+                                    <th style="display: none;">Números</th>
                                     <th class="hidden-phone">Nombre</th>
                                     <th class="hidden-phone">Télefono</th>
                                     <th class="hidden-phone">Correo</th>
-                                    <th>Fecha Registro</th>
-                                    <th>Estado</th>
+                                    <th style="display: none;">Fecha Registro</th>
+                                    <th style="display: none;">Estado</th>
                                     <th>Acciones</th>
                                 </tr>
                             </thead>
@@ -29,19 +29,19 @@
 
                                     <tr>
                                         <td><?php echo $mostar['id'] ?></td>
-                                        <td><?php echo $mostar['numeros_seleccionado'] ?></td>
+                                        <td style="display: none;"><?php echo $mostar['numeros_seleccionado'] ?></td>
                                         <td><?php echo $mostar['nombre'] ?></td>
                                         <td><?php echo $mostar['tel'] ?></td>
                                         <td><?php echo $mostar['email'] ?></td>
-                                        <td><?php echo $mostar['fecha_registro'] ?></td>
-                                        <td><?php if ($mostar['id_estado'] == 1) {
-                                                echo "pendiente";
-                                            } else if ($mostar['id_estado'] == 2) {
-                                                echo "pagado";
-                                            } else {
-                                                echo "cancelado";
-                                            }
-                                            ?></td>
+                                        <td style="display: none;"><?php echo $mostar['fecha_registro'] ?></td>
+                                        <td style="display: none;"><?php if ($mostar['id_estado'] == 1) {
+                                                                        echo "pendiente";
+                                                                    } else if ($mostar['id_estado'] == 2) {
+                                                                        echo "pagado";
+                                                                    } else {
+                                                                        echo "cancelado";
+                                                                    }
+                                                                    ?></td>
                                         <td class="containerEstado">
                                             <div class="pagado" onclick="verificar(<?php echo $mostar['id'] ?>)" id="pagado">
                                                 <i class="fa-solid fa-check"></i>

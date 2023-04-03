@@ -24,7 +24,6 @@ if (!isset($_SESSION['usuario'])) {
         <div class="loader"></div>
     </div>
     <div class="page-container">
-        <?php include './assets/statics/menu.php'; ?>
         <div class="main-content">
             <?php include './assets/statics/header.php'; ?>
             <div class="main-content-inner">
@@ -34,9 +33,6 @@ if (!isset($_SESSION['usuario'])) {
         </div>
         <?php include './assets/statics/footer.php'; ?>
     </div>
-    <script>
-       
-    </script>
 </body>
 
 </html>
