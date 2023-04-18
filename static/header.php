@@ -24,7 +24,7 @@
                     <a href="#premios">Premios</a>
                 </li>
                 <li>
-                    <a href="#bingo">Bingo</a>
+                    <a href="#bingo">Sorteo</a>
                 </li>
                 <li>
                     <a href="./aviso_privacidad.pdf" download="Aviso de Privacidad Amigos Con Causa">Aviso de Privacidad</a>
