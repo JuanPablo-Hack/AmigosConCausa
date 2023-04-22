@@ -19,32 +19,36 @@
                             compañía de la sociedad.
                         </p>
                     </div>
-                    <table class="tablaC">
-                        <tr>
-                            <th>BANCO</th>
-                            <th>No tarjeta</th>
-                            <th>C.L.A.B.E</th>
-                        </tr>
-                        <tr>
-                            <td><img src="./assets/img/banamex.png" alt="banamex"></td>
-                            <td>5256782240488898</td>
-                            <td>002095901605266526</td>
-                        </tr>
-                        <tr>
-                            <td><img src="./assets/img/bbva.png" alt="bbva"></td>
-                            <td>4152314047365039</td>
-                            <td>012180015467932106</td>
-                        </tr>
-                        <tr>
-                            <td><img src="./assets/img/banorte.png" alt="banorte"></td>
-                            <td>4915663054930459</td>
-                            <td>0720950108469994507</td>
-                        </tr>
-                        <tr>
-                            <td><img src="./assets/img/banorte.png" alt="banorte"></td>
-                            <td>4189143051430570</td>
-                            <td>0720950112059805973</td>
-                        </tr>
+                    <table id="tablaCuentas" class="TablaCuentas">
+                       <thead>
+                            <tr>
+                                <th>Banco</th>
+                                <th>No. Tarjeta</th>
+                                <th>Clabe</th>
+                            </tr>
+                       </thead>
+                       <tbody>
+                            <tr>
+                                <td><img class="img_cuentas" src="./assets/img/banamex.png" alt="banamex"></td>
+                                <td>5256782240488898</td>
+                                <td>002095901605266526</td>
+                            </tr>
+                            <tr>
+                                <td><img class="img_cuentas" src="./assets/img/bbva.png" alt="bbva"></td>
+                                <td>4152314047365039</td>
+                                <td>012180015467932106</td>
+                            </tr>
+                            <tr>
+                                <td><img class="img_cuentas" src="./assets/img/banorte.png" alt="banorte"></td>
+                                <td>4915663054930459</td>
+                                <td>0720950108469994507</td>
+                            </tr>
+                            <tr>
+                                <td><img class="img_cuentas" src="./assets/img/banorte.png" alt="banorte"></td>
+                                <td>4189143051430570</td>
+                                <td>0720950112059805973</td>
+                            </tr>
+                       </tbody>
                     </table>
                 </div>
             </div>
