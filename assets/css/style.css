@@ -275,7 +275,7 @@ img {
   border-bottom-color: #ecf0f1;
 }
 
-.nav-tabs>li>a {
+.nav-tabs > li > a {
   padding: 10px 0;
   margin-right: 30px;
   color: inherit;
@@ -284,37 +284,37 @@ img {
   border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
-.nav .open>a,
-.nav .open>a:hover,
-.nav .open>a:focus {
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
   background: transparent;
   border: none;
   border-color: rgba(255, 255, 255, 0);
 }
 
-.nav>li>a:hover,
-.nav>li>a:focus {
+.nav > li > a:hover,
+.nav > li > a:focus {
   background-color: #ecf0f1;
 }
 
-.nav-tabs>li>a:hover,
-.nav-tabs>li>a:focus {
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
   color: #1abc9c;
   background: transparent;
 }
 
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:hover,
-.nav-tabs>li.active>a:focus {
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
   background: transparent;
   border: none;
   color: #1abc9c;
   border-bottom: 1px solid #1abc9c;
 }
 
-.nav-pills>li.active>a,
-.nav-pills>li.active>a:hover,
-.nav-pills>li.active>a:focus {
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
   background-color: #1abc9c;
 }
 
@@ -324,9 +324,9 @@ img {
   border-bottom-color: #1abc9c;
 }
 
-.dropdown-menu>.active>a,
-.dropdown-menu>.active>a:hover,
-.dropdown-menu>.active>a:focus {
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
   background-color: #1abc9c;
 }
 
@@ -359,7 +359,7 @@ img {
   margin-bottom: 25px;
 }
 
-.panel-default>.panel-heading {
+.panel-default > .panel-heading {
   background: #fff;
   color: #444;
 }
@@ -368,11 +368,11 @@ img {
   padding: 20px 25px;
 }
 
-.panel-default>.panel-heading a:hover {
+.panel-default > .panel-heading a:hover {
   color: #01b0d1;
 }
 
-.panel-default>.panel-heading+.panel-collapse .panel-body {
+.panel-default > .panel-heading + .panel-collapse .panel-body {
   border-top: 1px solid #eee;
 }
 
@@ -576,23 +576,23 @@ fieldset[disabled] .form-control:focus {
   margin: 23px 0;
 }
 
-.navbar-nav>li>a {
+.navbar-nav > li > a {
   padding: 30px 0;
   margin: 0 15px;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav > li > a {
   color: inherit;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus,
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-nav>.active>a:focus {
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
   background-color: transparent;
   background-color: rgba(255, 255, 255, 0);
   color: #01b0d1;
@@ -1444,8 +1444,7 @@ img.mfp-img {
 }
 
 @media screen and (max-width: 800px) and (orientation: landscape),
-screen and (max-height: 300px) {
-
+  screen and (max-height: 300px) {
   /** * Remove all paddings around the image on small screen */
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
@@ -1549,7 +1548,8 @@ screen and (max-height: 300px) {
 }
 
 /*	Common	==================================================*/
-.section {}
+.section {
+}
 
 .wrapsection {
   padding-top: 140px;
@@ -1631,7 +1631,7 @@ screen and (max-height: 300px) {
   align-items: center;
 }
 
-#btn-modal:checked~.container-modal {
+#btn-modal:checked ~ .container-modal {
   display: flex;
 }
 
@@ -1641,7 +1641,6 @@ screen and (max-height: 300px) {
   color: black;
 }
 
-
 .tablaC {
   display: flex;
   align-items: center;
@@ -1650,6 +1649,18 @@ screen and (max-height: 300px) {
   color: #000;
   padding: 20px;
   align-self: center;
+}
+.submit3 {
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  padding: 10px 10px;
+  margin: 20px;
+  display: block;
+}
+.submit3:hover {
+  color: yellow;
+  font-size: 25px;
 }
 
 .tablaC tr {
@@ -1672,7 +1683,6 @@ screen and (max-height: 300px) {
   width: 300px;
   height: 60px;
 }
-
 /*-------------------------BINGO-----------------------*/
 #containerBingo {
   background-color: #efe7e4;
@@ -1738,7 +1748,7 @@ screen and (max-height: 300px) {
     margin-right: auto;
   }
 
-  .navbar-nav>li>a {
+  .navbar-nav > li > a {
     margin: 0 7px;
   }
 
@@ -1749,7 +1759,6 @@ screen and (max-height: 300px) {
 }
 
 @media (max-width: 767px) {
-
   .section,
   .parallax.section .container {
     padding-top: 30px;
@@ -1773,7 +1782,7 @@ screen and (max-height: 300px) {
     padding-right: 30px;
   }
 
-  .navbar-nav>li>a {
+  .navbar-nav > li > a {
     padding: 10px;
   }
 

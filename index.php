@@ -10,6 +10,7 @@
   <?php include("./static/header.php") ?>
   <?php include("./components/MainIntro.php") ?>
   <?php include("./components/AboutSection.php") ?>
+
   <?php include("./components/PremiosSection.php") ?>
   <?php include("./components/FAQ.php") ?>
   <?php include("./components/CuentasBancos.php") ?>
