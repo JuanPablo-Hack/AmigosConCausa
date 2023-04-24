@@ -10,47 +10,24 @@
                     </strong>
                     sigue las indicaciones que se muestran en la siguiente tabla.
                 </h3>
-                <div class="snip1214">
-                    <div class="plan">
-                        <h3 class="plan-title">
-                            Básico
-                        </h3>
-                        <div class="plan-cost"><span class="plan-price">$100</span><span class="plan-type">/ 5 números</span></div>
-                        <ul class="plan-features">
-                            <li><i class="ion-checkmark"> </i>5 números para elegir de la tabla</li>
-                            <li><i class="ion-checkmark"> </i>5 números para ganar el sorteo</li>
-                            <li><i class="ion-checkmark"> </i>Aviso primordial por correo electronico</li>
-                            <li><i class="ion-checkmark"> </i>24/7 soporte ténico</li>
-                            <li><i class="ion-checkmark"> </i>Recordatorios semanales del concurso</li>
-                        </ul>
-                    </div>
-                    <div class="plan">
-                        <h3 class="plan-title">
-                            Platino
-                        </h3>
-                        <div class="plan-cost"><span class="plan-price">$180</span><span class="plan-type">/ 10 números</span></div>
-                        <ul class="plan-features">
-                            <li><i class="ion-checkmark"> </i>10 números para elegir de la tabla</li>
-                            <li><i class="ion-checkmark"> </i>10 números para ganar el sorteo</li>
-                            <li><i class="ion-checkmark"> </i>Aviso primordial por correo electronico</li>
-                            <li><i class="ion-checkmark"> </i>24/7 soporte ténico</li>
-                            <li><i class="ion-checkmark"> </i>Recordatorios semanales del concurso</li>
-                        </ul>
-                    </div>
-                    <div class="plan">
-                        <h3 class="plan-title">
-                            Ultra
-                        </h3>
-                        <div class="plan-cost"><span class="plan-price">$350</span><span class="plan-type">/ 20 números</span></div>
-                        <ul class="plan-features">
-                            <li><i class="ion-checkmark"> </i>20 números para elegir de la tabla</li>
-                            <li><i class="ion-checkmark"> </i>20 números para ganar el sorteo</li>
-                            <li><i class="ion-checkmark"> </i>Aviso primordial por correo electronico</li>
-                            <li><i class="ion-checkmark"> </i>24/7 soporte ténico</li>
-                            <li><i class="ion-checkmark"> </i>Recordatorios diarios del concurso y llamadas</li>
-                        </ul>
-                    </div>
-                </div>
+                <table class="tablaC">
+                    <tr>
+                        <th>Número <br> Oportunidades</th>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <td>5 números</td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <td>10 números</td>
+                        <td>$180.00</td>
+                    </tr>
+                    <tr>
+                        <td>20 números</td>
+                        <td>$350.00</td>
+                    </tr>
+                </table>
             </div>
             <div class="row">
                 <div class="col-md-12">
