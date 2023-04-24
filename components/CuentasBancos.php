@@ -27,23 +27,23 @@
                         </tr>
                         <tr>
                             <td><img src="./assets/img/banamex.png" alt="banamex"></td>
-                            <td>5256 7822 4084 8898</td>
+                            <td>5256782240848898</td>
                             <td>002095901605266526</td>
                         </tr>
                         <tr>
                             <td><img src="./assets/img/bbva.png" alt="bbva"></td>
-                            <td>4915 6630 5493 0459</td>
+                            <td>4152314047365093</td>
                             <td>012180015467932106</td>
                         </tr>
                         <tr>
                             <td><img src="./assets/img/banorte.png" alt="banorte"></td>
-                            <td>4152 3140 4736 5093</td>
-                            <td>0720950108469994507</td>
+                            <td>4915663054930459</td>
+                            <td>072095010846994507</td>
                         </tr>
                         <tr>
                             <td><img src="./assets/img/banorte.png" alt="banorte"></td>
-                            <td>4189 1430 5143 0570</td>
-                            <td>0720950112059805973</td>
+                            <td>4189143051430570</td>
+                            <td>072095012059805973</td>
                         </tr>
                     </table>
                 </div>
