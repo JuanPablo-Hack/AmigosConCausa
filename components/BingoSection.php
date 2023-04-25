@@ -6,10 +6,20 @@
                 <h3 class="section-title">
                     <strong>
                         Estos son los precios por
-                        <span class="lighter">números para realizar el sorteo</span>
+                        números para realizar el sorteo
                     </strong>
                     sigue las indicaciones que se muestran en la siguiente tabla.
                 </h3>
+                <br>
+                <br>
+                <h3 class="section-title">
+                    <strong>
+                        Fecha del sorteo:
+                        30 de Junio de 2023.
+                    </strong>
+                </h3>
+                <br>
+                <br>
                 <table class="tablaC">
                     <tr>
                         <th>Número <br> Oportunidades</th>
@@ -28,6 +38,9 @@
                         <td>$350.00</td>
                     </tr>
                 </table>
+                <center>
+                    <a class="submit3" href="https://www.pronosticos.gob.mx/">Visita el sitio de la lotería nacional</a>
+                </center>
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -83,7 +96,4 @@
             </div>
         </div>
     </div>
-    <center>
-        <a class="submit3" href="https://www.pronosticos.gob.mx/">Visita el sitio de la lotería nacional</a>
-    </center>
 </section>

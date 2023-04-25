@@ -32,7 +32,7 @@
                         </tr>
                         <tr>
                             <td><img src="./assets/img/bbva.png" alt="bbva"></td>
-                            <td>4152314047365093</td>
+                            <td>4152314047365039</td>
                             <td>012180015467932106</td>
                         </tr>
                         <tr>
