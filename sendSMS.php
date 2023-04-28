@@ -1,7 +1,7 @@
 <?php
 use Twilio\Rest\Client;
 
-function sendSMS($phone,$numeros){
+function sendSMS($tel,$numeros){
     // Include the bundled autoload from the Twilio PHP Helper Library
     require __DIR__ . '/twilio-php/src/Twilio/autoload.php';
     // Your Account SID and Auth Token from twilio.com/console
@@ -14,11 +14,12 @@ function sendSMS($phone,$numeros){
     $client = new Client($account_sid, $auth_token);
     $client->messages->create(
         // Where to send a text message (your cell phone?)
-        '+52'.$phone,
+        '+52'.$tel,
         array(
             'from' => $twilio_number,
             'body' => 'Pedido confirmado, tus boletos son: '.$numeros. "|| ¡Procede con el pago para confirmar tus numeros!"
         )
     );
-}
+};
+
 ?>
