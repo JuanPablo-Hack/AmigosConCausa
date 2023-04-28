@@ -50,7 +50,7 @@
                         </div>
                         <div id="containerT"></div>
                     </div>
-                    <form id="Form_Orden" name="Form_Orden" method="post" class="text-left">
+                    <form id="Form_Orden" class="text-left">
                         <fieldset>
                             <div class="row">
                                 <div class="col-md-4 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
@@ -58,14 +58,14 @@
                                         Nombre
                                         <span class="required">*</span>
                                     </label>
-                                    <input type="text" name="name" id="name" size="30" value="" required />
+                                    <input type="text" name="name" id="name" size="30" required />
                                 </div>
                                 <div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
                                     <label for="email">
                                         Email
                                         <span class="required">*</span>
                                     </label>
-                                    <input type="text" name="email" id="email" size="30" value="" required />
+                                    <input type="text" name="email" id="email" size="30" required />
                                 </div>
                                 <div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
                                     <label for="phone">Teléfono</label>
@@ -76,7 +76,7 @@
                                 </div>
                             </div>
                             <div class="wow fadeIn animated" data-wow-delay="0.3" data-wow-duration="1.5s">
-                                <input id="submit2" type="submit" name="submit" value="Send" />
+                                <input id="submit2" type="submit" value="Enviar" />
                             </div>
                         </fieldset>
                     </form>

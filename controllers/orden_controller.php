@@ -5,8 +5,6 @@ include "../config/conexion.php";
 $nombre = $_POST["name"];
 $email = $_POST["email"];
 $tel = $_POST["phone"];
-$estado = "1";
 $numeros_seleccionados = $_POST["numeros"];
-$insertar_datos = mysqli_query($conexion, "INSERT INTO info_registros VALUES  (NULL,'$numeros_seleccionados','$nombre','$tel','$email','$estado')");
-
-?>
+$SQL = "INSERT INTO `info_registros` (`id`, `numeros_seleccionado`, `nombre`, `tel`, `email`, `id_estado`, `fecha_registro`) VALUES (NULL, '$numeros_seleccionados', '$nombre ', '$tel', '$email', '1', current_timestamp())";
+$resultado = $conexion->query($SQL);
