@@ -5,7 +5,7 @@
                 <div class="col-md-12 sol-sm-12">
                     <div class="maintitle">
                         <h3 class="section-title">
-                            Preguntas má<s></s>
+                            Preguntas más<s></s>
                             <span class="wow bounceInRight">Frecuentes</span>
                         </h3>
                         <p class="lead">

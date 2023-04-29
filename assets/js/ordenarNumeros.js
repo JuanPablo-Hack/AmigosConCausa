@@ -18,6 +18,9 @@ async function crearOrden(e) {
       title: "Felicidades has conseguido tus números",
       icon: "success",
     });
+    setTimeout(function () {
+      location.reload();
+    }, 3000);
   }
   if (numeroE.length < 5) {
     Swal.fire({
