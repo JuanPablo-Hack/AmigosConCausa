@@ -81,7 +81,7 @@ const numeros_seleccionado = async () => {
     }
   }
   document.getElementById("containerT").innerHTML = createTable(bingo);
-  
+
   try {
     await fetch("controllers/numeros_pendientes.php")
       .then((res) => res.json())
@@ -97,12 +97,15 @@ const numeros_seleccionado = async () => {
       });
     });
 
+
     numerosPi.forEach((element) => {
       let rPNumber = bingo.indexOf(element);
       if (rPNumber != -1) {
         bingo.splice(rPNumber, 1);
       }
     });
+
+    document.getElementById("containerT").innerHTML = createTable(bingo);
   
   } catch (error) {
     console.log(error);
