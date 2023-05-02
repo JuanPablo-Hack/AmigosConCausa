@@ -50,6 +50,18 @@ const checkInfo = () => {
   let phone2 = document.getElementById("phone2").value;
 };
 
+
+let createTable = function (numeros) {
+  let string = "";
+
+  for (let numero of numeros) {
+    string += `<div class='numero' id=${numero} onclick=addBingo(id)>`;
+    string += numero;
+    string += "</div>";
+  }
+  return string;
+};
+
 const numeros_seleccionado = async () => {
   for (i = 0; i < 10000; i++) {
     let a = "000";
@@ -68,6 +80,7 @@ const numeros_seleccionado = async () => {
       bingo.push(i);
     }
   }
+  document.getElementById("containerT").innerHTML = createTable(bingo);
 
   try {
     await fetch("controllers/numeros_pendientes.php")
@@ -84,13 +97,16 @@ const numeros_seleccionado = async () => {
       });
     });
 
+
     numerosPi.forEach((element) => {
       let rPNumber = bingo.indexOf(element);
       if (rPNumber != -1) {
         bingo.splice(rPNumber, 1);
       }
     });
+
     document.getElementById("containerT").innerHTML = createTable(bingo);
+  
   } catch (error) {
     console.log(error);
   }
@@ -98,16 +114,6 @@ const numeros_seleccionado = async () => {
 
 numeros_seleccionado();
 
-let createTable = function (numeros) {
-  let string = "";
-
-  for (let numero of numeros) {
-    string += `<div class='numero' id=${numero} onclick=addBingo(id)>`;
-    string += numero;
-    string += "</div>";
-  }
-  return string;
-};
 
 const addBingo = (id) => {
   let rPNumber = numeroE.indexOf(id);
