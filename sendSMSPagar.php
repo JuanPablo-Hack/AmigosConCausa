@@ -12,6 +12,6 @@ $client->messages->create(
     '+52' . $tel,
     array(
         'from' => $twilio_number,
-        'body' => 'Compra confirmado, tu compra esta asegurada, por favor espera a la fecha del sorteo y verifica que tus números sean o no los ganadores'
+        'body' => 'Compra confirmado, tu compra esta asegurada'
     )
 );

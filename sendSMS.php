@@ -13,7 +13,7 @@ function sendSMS($phone, $numeros)
         '+52' . $phone,
         array(
             'from' => $twilio_number,
-            'body' => 'Pedido confirmado, tus boletos son: ' . $numeros . "|| ¡Procede con el pago para confirmar tus numeros, con las cuentas participantes dependiendo de los números que seleccionaste, paga el precio que se muestra en la tabla!"
+            'body' => 'Pedido confirmado, tus boletos son: ' . $numeros . "|| ¡Procede con el pago para confirmar tus numeros!"
         )
     );
 }
