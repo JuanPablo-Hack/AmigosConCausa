@@ -10,11 +10,11 @@
   <?php include("./static/header.php") ?>
   <?php include("./components/MainIntro.php") ?>
   <?php include("./components/AboutSection.php") ?>
-
   <?php include("./components/PremiosSection.php") ?>
   <?php include("./components/FAQ.php") ?>
   <?php include("./components/CuentasBancos.php") ?>
   <?php include("./components/BingoSection.php") ?>
+  <?php include("./components/Contact.php") ?>
   <?php include("./static/footer.php"); ?>
 </body>
 

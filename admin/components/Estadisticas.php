@@ -13,7 +13,6 @@
                 </div>
             </div>
         </div>
-        <!-- TODO: Poner los iconos respectivos en las estadisticas de pagos pendientes (money-bill) y pagos pagados (bag-shopping) -->
         <div class="col-md-4">
             <div class="single-report mb-xs-30" id="containerPagados">
                 <div class="s-report-inner pr--20 pt--30 mb-3">

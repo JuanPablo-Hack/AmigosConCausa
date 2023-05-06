@@ -27,10 +27,14 @@
                     <a href="#bingo">Sorteo</a>
                 </li>
                 <li>
-                    <a href="./aviso_privacidad.pdf" download="Aviso de Privacidad Amigos Con Causa">Aviso de Privacidad</a>
+                    <a href="./aviso_privacidad.pdf" download="Aviso de Privacidad Amigos Con Causa">Aviso de
+                        Privacidad</a>
                 </li>
                 <li>
                     <a href="./Términos y Condiciones.pdf" download="Términos y Condiciones">Términos y Condiciones</a>
+                </li>
+                <li>
+                    <a href="#contactarea">Contacto</a>
                 </li>
             </ul>
         </nav>

@@ -1,5 +1,19 @@
+<div class="phone-call cbh-phone cbh-green cbh-show  cbh-static" id="clbh_phone_div">
+    <a id="WhatsApp-button" href="https://wa.me/553141424429" target="_blank" class="phoneJs" title="WhatsApp 360imagem">
+        <div class="cbh-ph-circle"></div>
+        <div class="cbh-ph-circle-fill"></div>
+        <div class="cbh-ph-img-circle1"></div>
+    </a>
+</div>
 <footer>
     <section id="credits" class="text-center">
+        <span class="social wow zoomIn">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+        </span>
+        <br />
         Copyright 2023 &copy; Amigos con Causa
         <br />
         Desarrollado por
