@@ -1,5 +1,5 @@
 <div class="phone-call cbh-phone cbh-green cbh-show  cbh-static" id="clbh_phone_div">
-    <a id="WhatsApp-button" href="https://wa.me/553141424429" target="_blank" class="phoneJs" title="WhatsApp 360imagem">
+    <a id="WhatsApp-button" href="https://api.whatsapp.com/send?phone=5213141424429" target="_blank" class="phoneJs" title="WhatsApp 360imagem">
         <div class="cbh-ph-circle"></div>
         <div class="cbh-ph-circle-fill"></div>
         <div class="cbh-ph-img-circle1"></div>
