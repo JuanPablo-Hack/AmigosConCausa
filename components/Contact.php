@@ -16,7 +16,7 @@
                     <div class="col-md-6 col-sm-6">
                         <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
                             <span class="glyphicon glyphicon-phone" style="color: #01b0d1;"></span>
-                            <h3><a href="tel:+3141424429">3141424429</a></h3>
+                            <h3><a href="tel:3141424429">3141424429</a></h3>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6">
