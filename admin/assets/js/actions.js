@@ -87,6 +87,7 @@ const cancelar = async (id) => {
     });
   }
 };
+
 const mensajeSMSCancelado = async (tel) => {
   let cancelTel = new FormData();
   cancelTel.append("tel", tel);
