@@ -63,9 +63,8 @@
                                 <div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
                                     <label for="email">
                                         Email
-                                        <span class="required">*</span>
                                     </label>
-                                    <input type="text" name="email" id="email" size="30" required />
+                                    <input type="text" name="email" id="email" size="30" />
                                 </div>
                                 <div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
                                     <label for="phone">Teléfono</label>
