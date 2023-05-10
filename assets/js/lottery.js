@@ -51,6 +51,7 @@ const checkInfo = () => {
 };
 
 
+
 let createTable = function (numeros) {
   let string = "";
 
@@ -63,10 +64,11 @@ let createTable = function (numeros) {
 };
 
 const numeros_seleccionado = async () => {
+  let a = "000";
+  let b = "00";
+  let c = "0";
+  
   for (i = 0; i < 10000; i++) {
-    let a = "000";
-    let b = "00";
-    let c = "0";
     if (i < 10) {
       let format = a + i;
       bingo.push(format);
@@ -82,6 +84,7 @@ const numeros_seleccionado = async () => {
   }
   document.getElementById("containerT").innerHTML = createTable(bingo);
 
+
   try {
     await fetch("controllers/numeros_pendientes.php")
       .then((res) => res.json())
@@ -93,23 +96,35 @@ const numeros_seleccionado = async () => {
 
     numerosP.forEach((element) => {
       element.forEach((element) => {
-        numerosPi.push(parseInt(element));
+        if(parseInt(element)<10){
+          let format = a + parseInt(element);
+          numerosPi.push(format);
+        }else if (parseInt(element)<100){
+          let format = b + parseInt(element);
+          numerosPi.push(format);
+        }else if (parseInt(element)<1000){
+          let format = c + parseInt(element);
+          numerosPi.push(format);
+        }else{
+          numerosPi.push(parseInt(element));
+        }
       });
     });
 
-
     numerosPi.forEach((element) => {
       let rPNumber = bingo.indexOf(element);
+
       if (rPNumber != -1) {
         bingo.splice(rPNumber, 1);
       }
     });
 
-    document.getElementById("containerT").innerHTML = createTable(bingo);
-  
   } catch (error) {
     console.log(error);
   }
+
+  document.getElementById("containerT").innerHTML = createTable(bingo);
+  
 };
 
 numeros_seleccionado();
@@ -158,9 +173,9 @@ async function crearOrden(e) {
         title: "Tu registro se completo correctamente",
         icon: "success",
       });
-    //   setTimeout(() => {
-    //     location.href = location.href;
-    //   }, 2000);
+      setTimeout(() => {
+        location.href = location.href;
+      }, 2000);
     } catch (error) {
       Swal.fire({
         title: "Algo fallo en tu registro",
