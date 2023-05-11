@@ -1,6 +1,5 @@
 <?php
 
-
 switch ($_POST['action']) {
     case 'agregar':
         agregarNumerosSeleccionados($_POST["name"], $_POST["email"], $_POST["phone"], $_POST["numeros"]);
@@ -12,6 +11,7 @@ switch ($_POST['action']) {
         pagarNumeros($_POST["id"], $_POST["telefono"]);
         break;
 }
+
 function agregarNumerosSeleccionados($nombre, $email, $telefono, $numeros_seleccionados)
 {
     include "sendMessage.php";
