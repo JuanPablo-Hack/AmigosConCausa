@@ -1,7 +1,7 @@
 let numerosP = 0;
 let numerosPA = 0;
 
-const verificar = (id, tel) => {
+const pagar = async (id, tel) => {
   Swal.fire({
     title: "¿Seguro?",
     text: "Afectaras todo el pedido",
@@ -10,42 +10,28 @@ const verificar = (id, tel) => {
     confirmButtonText: "Estoy seguro",
     cancelButtonColor: "#d33",
   }).then((result) => {
-    if (result.value) {
-      mensajeSMSPagado(tel);
-      pagar(id);
+    let data = new FormData();
+    data.append("id", id);
+    data.append("telefono", tel);
+    data.append("action", "pagar");
+    try {
+      response = fetch("../controllers/orden_controller.php", {
+        method: "POST",
+        body: data,
+      });
+      Swal.fire({
+        title: "La informacion se actualizo correctamente",
+        icon: "success",
+      });
+      // setTimeout(function () {
+      //   location.reload();
+      // }, 3000);
+    } catch (error) {
+      Swal.fire({
+        title: "Ocurrio un error",
+        icon: "error",
+      });
     }
-  });
-};
-
-const pagar = async (id) => {
-  let data = new FormData();
-  data.append("id", id);
-  try {
-    response = await fetch("../controllers/pagar.php", {
-      method: "POST",
-      body: data,
-    });
-    Swal.fire({
-      title: "La informacion se actualizo correctamente",
-      icon: "success",
-    });
-    setTimeout(function () {
-      location.reload();
-    }, 3000);
-  } catch (error) {
-    Swal.fire({
-      title: "Ocurrio un error",
-      icon: "error",
-    });
-  }
-};
-
-const mensajeSMSPagado = async (tel) => {
-  let dataTel = new FormData();
-  dataTel.append("tel", tel);
-  await fetch("../sendSMSPagar.php", {
-    method: "POST",
-    body: dataTel,
   });
 };
 
@@ -59,8 +45,8 @@ const verificar2 = (id, tel) => {
     cancelButtonColor: "#d33",
   }).then((result) => {
     if (result.value) {
-      cancelar(id);
       mensajeSMSCancelado(tel);
+      cancelar(id);
     }
   });
 };

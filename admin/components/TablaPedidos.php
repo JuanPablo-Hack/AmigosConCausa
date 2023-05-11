@@ -43,7 +43,7 @@
                                                                     }
                                                                     ?></td>
                                         <td class="containerEstado">
-                                            <div class="pagado" onclick="verificar(<?php echo $mostar['id'] ?>,<?php echo $mostar['tel'] ?>)" id="pagado">
+                                            <div class="pagado" onclick="pagar(<?php echo $mostar['id'] ?>,<?php echo $mostar['tel'] ?>,<?php echo $mostar['numeros_seleccionado'] ?>)" id="pagado">
                                                 <i class="fa-solid fa-check"></i>
                                             </div>
                                             <div class="cancelado" onclick="verificar2(<?php echo $mostar['id'] ?>,<?php echo $mostar['tel'] ?>)" id="cancelado">
