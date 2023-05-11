@@ -27,6 +27,7 @@ function cancelarNumeros($id, $telefono)
     include "../config/conexion.php";
     sendSMSCancelado($telefono);
     $actualizar = mysqli_query($conexion, "DELETE FROM info_registros WHERE id = '$id'");
+    echo 1;
 }
 
 function pagarNumeros($id, $telefono)
@@ -35,4 +36,5 @@ function pagarNumeros($id, $telefono)
     include "../config/conexion.php";
     $actualizar = mysqli_query($conexion, "UPDATE info_registros SET id_estado=2 WHERE id = '$id'");
     sendSMSPedidoConfirmado($telefono);
+    echo 1; 
 }
