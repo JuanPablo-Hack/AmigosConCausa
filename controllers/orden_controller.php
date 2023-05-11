@@ -5,7 +5,7 @@ switch ($_POST['action']) {
         agregarNumerosSeleccionados($_POST["name"], $_POST["email"], $_POST["phone"], $_POST["numeros"]);
         break;
     case 'cancelar':
-        cancelarNumeros($_POST["id"]);
+        cancelarNumeros($_POST["id"], $_POST["telefono"]);
         break;
     case 'pagar':
         pagarNumeros($_POST["id"], $_POST["telefono"]);
@@ -21,10 +21,12 @@ function agregarNumerosSeleccionados($nombre, $email, $telefono, $numeros_selecc
     sendSMSPedimento($telefono, $numeros_seleccionados);
 }
 
-function cancelarNumeros($id)
+function cancelarNumeros($id, $telefono)
 {
+    include "sendMessage.php";
     include "../config/conexion.php";
-    $actualizar = mysqli_query($conexion, "UPDATE info_registros SET id_estado=3 WHERE id = '$id'");
+    sendSMSCancelado($telefono);
+    $actualizar = mysqli_query($conexion, "DELETE FROM info_registros WHERE id = '$id'");
 }
 
 function pagarNumeros($id, $telefono)

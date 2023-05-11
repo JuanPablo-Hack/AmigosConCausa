@@ -46,7 +46,7 @@
                                             <div class="pagado" onclick="pagar(<?php echo $mostar['id'] ?>,<?php echo $mostar['tel'] ?>,<?php echo $mostar['numeros_seleccionado'] ?>)" id="pagado">
                                                 <i class="fa-solid fa-check"></i>
                                             </div>
-                                            <div class="cancelado" onclick="verificar2(<?php echo $mostar['id'] ?>,<?php echo $mostar['tel'] ?>)" id="cancelado">
+                                            <div class="cancelado" onclick="cancelar(<?php echo $mostar['id'] ?>,<?php echo $mostar['tel'] ?>,<?php echo $mostar['numeros_seleccionado'] ?>)" id="cancelado">
                                                 <i class="fa-solid fa-trash"></i>
                                             </div>
                                         </td>
