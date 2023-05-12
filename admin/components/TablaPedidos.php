@@ -12,6 +12,7 @@
                                 <tr>
                                     <th>ID</th>
                                     <th style="display: none;">Números</th>
+                                    <th class="hidden-phone">Folio Identificador</th>
                                     <th class="hidden-phone">Nombre</th>
                                     <th class="hidden-phone">Télefono</th>
                                     <th class="hidden-phone">Correo</th>
@@ -30,6 +31,7 @@
                                     <tr>
                                         <td><?php echo $mostar['id'] ?></td>
                                         <td style="display: none;"><?php echo $mostar['numeros_seleccionado'] ?></td>
+                                        <td><?php echo $mostar['folio'] ?></td>
                                         <td><?php echo $mostar['nombre'] ?></td>
                                         <td><?php echo $mostar['tel'] ?></td>
                                         <td><?php echo $mostar['email'] ?></td>
