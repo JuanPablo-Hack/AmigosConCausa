@@ -17,3 +17,9 @@ function pagarNumeros($conexion, $id)
     $resultado = $conexion->query("UPDATE info_registros SET id_estado=2 WHERE id = '$id'");
     if ($resultado) echo 1;
 }
+
+function reiniciarNumeros($conexion)
+{
+    $resultado = $conexion->query("TRUNCATE info_registros");
+    if ($resultado) echo 1;
+}

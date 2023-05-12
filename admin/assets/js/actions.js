@@ -18,7 +18,7 @@ const pagar = async (id, tel) => {
       confirmButtonText: "Si, eliminar",
       cancelButtonText: "No, cancelar!",
       reverseButtons: true,
-    }) 
+    })
     .then((result) => {
       if (result.isConfirmed) {
         let data = new FormData();
@@ -63,41 +63,6 @@ const pagar = async (id, tel) => {
       }
     });
 }
-
-// const pagar = async (id, tel) => {
-//   Swal.fire({
-//     title: "¿Seguro?",
-//     text: "Afectaras todo el pedido",
-//     icon: "question",
-//     showCancelButton: true,
-//     confirmButtonText: "Estoy seguro",
-//     cancelButtonText: 'No'
-//   }).then((result) => {
-//     let data = new FormData();
-//     data.append("id", id);
-//     data.append("telefono", tel);
-//     data.append("action", "pagar");
-//     try {
-//       response = fetch("../controllers/orden_controller.php", {
-//         method: "POST",
-//         body: data,
-//       });
-//       Swal.fire({
-//         title: "La informacion se actualizo correctamente",
-//         icon: "success",
-//       });
-//       setTimeout(function () {
-//         location.reload();
-//       }, 3000);
-//     } catch (error) {
-//       Swal.fire({
-//         title: "Ocurrio un error",
-//         icon: "error",
-//       });
-//     }
-//   });
-// };
-
 const cancelar = async (id, tel) => {
   const swalWithBootstrapButtons = Swal.mixin({
     customClass: {
@@ -115,7 +80,7 @@ const cancelar = async (id, tel) => {
       confirmButtonText: "Si, eliminar",
       cancelButtonText: "No, cancelar!",
       reverseButtons: true,
-    }) 
+    })
     .then((result) => {
       if (result.isConfirmed) {
         let data = new FormData();
@@ -160,8 +125,6 @@ const cancelar = async (id, tel) => {
       }
     });
 }
-
-
 const numerosPPT = async () => {
   try {
     await fetch("../controllers/numerosPT.php")
@@ -173,7 +136,7 @@ const numerosPPT = async () => {
       .then((res) => res.json())
       .then((data) => (numerosPA = data.length));
     document.getElementById("numerosPA").textContent = numerosPA;
-  } catch (error) {}
+  } catch (error) { }
 };
 
 numerosPPT();

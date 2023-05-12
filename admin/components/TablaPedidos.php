@@ -4,7 +4,8 @@
             <div class="card-body">
                 <div class="d-sm-flex justify-content-between align-items-center">
                     <h4 class="header-title mb-0">Estado de compra de boletos</h4>
-                </div>
+                </div><br>
+                <button onclick="reiniciarNumeros()">Reiniciar Números</button> <br>
                 <div class="market-status-table mt-4">
                     <div class="table-responsive">
                         <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">

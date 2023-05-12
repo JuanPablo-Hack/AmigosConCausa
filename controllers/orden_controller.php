@@ -17,6 +17,9 @@ switch ($_POST['action']) {
         pagarNumeros($conexion, $_POST["id"]);
         sendSMSPedidoConfirmado($_POST["telefono"]);
         break;
+    case 'reiniciar':
+        reiniciarNumeros($conexion);
+        break;
 }
 
 function generatePassword($length)

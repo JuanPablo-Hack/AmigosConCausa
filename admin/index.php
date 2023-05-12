@@ -9,14 +9,15 @@
     <div id="preloader">
         <div class="loader"></div>
     </div>
-
     <div class="login-area login-s2">
         <div class="container">
             <div class="login-box ptb--100">
-                <form action="../controllers/login.php" method="POST">
+                <form action="../controllers/loginController.php" method="POST">
+                    <input type="hidden" name="action" value="login">
                     <div class="login-form-head">
                         <h4>Iniciar sesión</h4>
-                        <p>Bienvenido al sistema administrador, ingresa tus credeciales para ingresar a tu información</p>
+                        <p>Bienvenido al sistema administrador, ingresa tus credeciales para ingresar a tu información
+                        </p>
                     </div>
                     <div class="login-form-body">
                         <div class="form-gp">

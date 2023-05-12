@@ -45,3 +45,112 @@ $(document).ready(function () {
     }
   });
 });
+const reiniciarNumeros = async () => {
+  const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: "btn btn-success",
+      cancelButton: "btn btn-danger",
+    },
+    buttonsStyling: false,
+  });
+  swalWithBootstrapButtons
+    .fire({
+      title: "Estas seguro que deseas liberar los números de nuevo?",
+      text: "¡No podrás revertir esto!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Si, eliminar",
+      cancelButtonText: "No, cancelar!",
+      reverseButtons: true,
+    })
+    .then((result) => {
+      if (result.isConfirmed) {
+        let data = new FormData();
+        data.append("action", "reiniciar");
+        fetch("../controllers/orden_controller.php", {
+          method: "POST",
+          body: data,
+        })
+          .then((result) => result.text())
+          .then((result) => {
+            if (result == 1) {
+              swalWithBootstrapButtons.fire(
+                "Los números han sido liberados!",
+                "Se ha reiniciado el juego de nuevo.",
+                "success"
+              );
+              setTimeout(function () {
+                location.reload();
+              }, 3000);
+            } else {
+              swalWithBootstrapButtons.fire(
+                "Error",
+                "Hemos tenido un error a la base de datos o la conexión.",
+                "error"
+              );
+              setTimeout(function () {
+                location.reload();
+              }, 3000);
+            }
+          });
+      } else if (
+        /* Read more about handling dismissals below */
+        result.dismiss === Swal.DismissReason.cancel
+      ) {
+        swalWithBootstrapButtons.fire(
+          "Cancelado",
+          "El juego sigue en su curso",
+          "error"
+        );
+      }
+    });
+}
+const cerrarSesion = async () => {
+  const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+      confirmButton: "btn btn-success",
+      cancelButton: "btn btn-danger",
+    },
+    buttonsStyling: false,
+  });
+  swalWithBootstrapButtons
+    .fire({
+      title: "Estas seguro que deseas cerrar sesión?",
+      text: "¡No podrás revertir esto!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonText: "Si, cerrar sesión",
+      cancelButtonText: "No, cancelar!",
+      reverseButtons: true,
+    })
+    .then((result) => {
+      if (result.isConfirmed) {
+        let data = new FormData();
+        data.append("action", "logout");
+        fetch("../controllers/loginController.php", {
+          method: "POST",
+          body: data,
+        })
+          .then((result) => result.text())
+          .then((result) => {
+            swalWithBootstrapButtons.fire(
+              "Correcto",
+              "Se ha cerrado tu sesión, para ingresar inicia sesión de nuevo.",
+              "success"
+            );
+            setTimeout(function () {
+              location.reload();
+            }, 3000);
+          });
+      } else if (
+        /* Read more about handling dismissals below */
+        result.dismiss === Swal.DismissReason.cancel
+      ) {
+        swalWithBootstrapButtons.fire(
+          "Cancelado",
+          "Tu sesión está a salvo",
+          "error"
+        );
+      }
+    });
+}
