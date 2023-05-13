@@ -46,12 +46,24 @@
                                                                     }
                                                                     ?></td>
                                         <td class="containerEstado">
-                                            <div class="pagado" onclick="pagar(<?php echo $mostar['id'] ?>,<?php echo $mostar['tel'] ?>,<?php echo $mostar['numeros_seleccionado'] ?>)" id="pagado">
-                                                <i class="fa-solid fa-check"></i>
-                                            </div>
-                                            <div class="cancelado" onclick="cancelar(<?php echo $mostar['id'] ?>,<?php echo $mostar['tel'] ?>,<?php echo $mostar['numeros_seleccionado'] ?>)" id="cancelado">
-                                                <i class="fa-solid fa-trash"></i>
-                                            </div>
+                                            <?php
+                                            if ($mostar['id_estado'] == 2) {
+                                            ?>
+                                                <div class="pagado" onclick="pagar(<?php echo $mostar['id'] ?>,<?php echo $mostar['tel'] ?>,<?php echo $mostar['numeros_seleccionado'] ?>)" id="pagado">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                            <?php
+                                            } else {
+                                            ?>
+                                                <div class="pagado" onclick="pagar(<?php echo $mostar['id'] ?>,<?php echo $mostar['tel'] ?>,<?php echo $mostar['numeros_seleccionado'] ?>)" id="pagado">
+                                                    <i class="fa-solid fa-check"></i>
+                                                </div>
+                                                <div class="cancelado" onclick="cancelar(<?php echo $mostar['id'] ?>,<?php echo $mostar['tel'] ?>,<?php echo $mostar['numeros_seleccionado'] ?>)" id="cancelado">
+                                                    <i class="fa-solid fa-trash"></i>
+                                                </div>
+                                            <?php
+                                            }
+                                            ?>
                                         </td>
                                     </tr>
                                 <?php

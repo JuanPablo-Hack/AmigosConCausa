@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 async function crearOrden(e) {
   e.preventDefault();
-  let arrayString = numeroE.join(",");
+  let arrayString = numeroE.join("-");
   document.getElementById("numeros").value = arrayString;
   let form = document.getElementById("Form_Orden");
   let data = new FormData(form);

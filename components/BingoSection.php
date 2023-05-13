@@ -44,12 +44,9 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div id="containerBingo">
-                        <div class="maintitle">
-                            <h3 class="section-title">Números Participantes</h3>
-                        </div>
-                        <div id="containerT"></div>
-                    </div>
+                    <h3 class="section-title">
+                        Escoge los números con los que deseas participar, seguido de eso rellena el formulario con tus datos de contacto y haz clic en enviar.
+                    </h3>
                     <form id="Form_Orden" class="text-left">
                         <fieldset>
                             <div class="row">
@@ -62,7 +59,7 @@
                                 </div>
                                 <div class="col-md-4 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
                                     <label for="email">
-                                        Email
+                                        Email (Opcional)
                                     </label>
                                     <input type="text" name="email" id="email" size="30" />
                                 </div>
@@ -79,6 +76,13 @@
                             </div>
                         </fieldset>
                     </form>
+                    <br> <br>
+                    <div id="containerBingo">
+                        <div class="maintitle">
+                            <h3 class="section-title">Números Participantes</h3>
+                        </div>
+                        <div id="containerT"></div>
+                    </div>
                     <div id="success">
                         <p class="contactalert">
                             ¡Tu mensaje fue enviado con éxito! estaré en contacto tan

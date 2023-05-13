@@ -15,7 +15,7 @@ const pagar = async (id, tel) => {
       text: "¡El pedido se actualizara a pagado!",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonText: "Si, eliminar",
+      confirmButtonText: "Si, poner en pagado",
       cancelButtonText: "No, cancelar!",
       reverseButtons: true,
     })
@@ -62,7 +62,7 @@ const pagar = async (id, tel) => {
         );
       }
     });
-}
+};
 const cancelar = async (id, tel) => {
   const swalWithBootstrapButtons = Swal.mixin({
     customClass: {
@@ -124,7 +124,7 @@ const cancelar = async (id, tel) => {
         );
       }
     });
-}
+};
 const numerosPPT = async () => {
   try {
     await fetch("../controllers/numerosPT.php")
@@ -136,7 +136,7 @@ const numerosPPT = async () => {
       .then((res) => res.json())
       .then((data) => (numerosPA = data.length));
     document.getElementById("numerosPA").textContent = numerosPA;
-  } catch (error) { }
+  } catch (error) {}
 };
 
 numerosPPT();

@@ -50,8 +50,6 @@ const checkInfo = () => {
   let phone2 = document.getElementById("phone2").value;
 };
 
-
-
 let createTable = function (numeros) {
   let string = "";
 
@@ -67,7 +65,7 @@ const numeros_seleccionado = async () => {
   let a = "000";
   let b = "00";
   let c = "0";
-  
+
   for (i = 0; i < 10000; i++) {
     if (i < 10) {
       let format = a + i;
@@ -84,28 +82,27 @@ const numeros_seleccionado = async () => {
   }
   document.getElementById("containerT").innerHTML = createTable(bingo);
 
-
   try {
     await fetch("controllers/numeros_pendientes.php")
       .then((res) => res.json())
       .then((data) => {
         data.forEach((element) => {
-          numerosP.push(element.numeros_seleccionado.split(","));
+          numerosP.push(element.numeros_seleccionado.split("-"));
         });
       });
 
     numerosP.forEach((element) => {
       element.forEach((element) => {
-        if(parseInt(element)<10){
+        if (parseInt(element) < 10) {
           let format = a + parseInt(element);
           numerosPi.push(format);
-        }else if (parseInt(element)<100){
+        } else if (parseInt(element) < 100) {
           let format = b + parseInt(element);
           numerosPi.push(format);
-        }else if (parseInt(element)<1000){
+        } else if (parseInt(element) < 1000) {
           let format = c + parseInt(element);
           numerosPi.push(format);
-        }else{
+        } else {
           numerosPi.push(parseInt(element));
         }
       });
@@ -118,17 +115,14 @@ const numeros_seleccionado = async () => {
         bingo.splice(rPNumber, 1);
       }
     });
-
   } catch (error) {
     console.log(error);
   }
 
   document.getElementById("containerT").innerHTML = createTable(bingo);
-  
 };
 
 numeros_seleccionado();
-
 
 const addBingo = (id) => {
   let rPNumber = numeroE.indexOf(id);
