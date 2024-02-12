@@ -35,14 +35,14 @@
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                        <img src="./assets/img/premio_uno.jpg" alt="Italika 125 z" class="imgsPremio"/>
+                        <img src="./assets/img/premio_honda.png" alt="Honda XR 150" id="imgsPremio"/>
                         <h3>
                             Segundo Lugar
                         </h3>
                         <div class="text-left">
-                            <h3><strong>Modelo:</strong> Italika 125 z</h3>
+                            <h3><strong>Modelo:</strong> Honda XR 150</h3>
                             <p>
-                                Colores disponibles. NEGROAZULBRILLANTE NEGROROJOOBS · Tipo de motor. 4 Tiempos, monocilíndrico · Cilindrada. 124 CC · Velocidad máxima. 90 km/h
+                                Cilindraje. 149.1 cc ; Tipo de motor. 4 Tiempos OHC, Refrigerado por aire ; Potencia máxima. 11.7 Hp @ 8000 rpm ; Torque máximo. 12.1 NM
                             </p>
                         </div>
                     </div>
