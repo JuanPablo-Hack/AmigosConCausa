@@ -1,6 +1,4 @@
-<section id="about" class="parallax section" style="
-        background-image: url(https://themepush.com/demo/runcharity/assets/img/1.jpg);
-      ">
+<section id="about" class="parallax section" >
     <div class="wrapsection">
         <div class="parallax-overlay" style="background-color: #01b0d1; opacity: 0.9"></div>
         <div class="container">
@@ -18,7 +16,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="service-box wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
-                        <img src="http://themepush.com/demo/runcharity/assets/img/dummy.jpg" alt="maraton" />
+                        <img src="./assets/img/caridad.jpg" alt="maraton" />
                         <h3>
                             Quienes
                             <br />

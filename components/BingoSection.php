@@ -27,15 +27,7 @@
                     </tr>
                     <tr>
                         <td>5 números</td>
-                        <td>$100.00</td>
-                    </tr>
-                    <tr>
-                        <td>10 números</td>
-                        <td>$180.00</td>
-                    </tr>
-                    <tr>
-                        <td>20 números</td>
-                        <td>$350.00</td>
+                        <td>$200.00</td>
                     </tr>
                 </table>
                 <center>

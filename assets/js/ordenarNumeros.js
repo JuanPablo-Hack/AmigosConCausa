@@ -29,15 +29,9 @@ async function crearOrden(e) {
       icon: "warning",
     });
   }
-  if (numeroE.length > 5 && numeroE.length < 10) {
+  if (numeroE.length > 5) {
     Swal.fire({
-      title: "Escoge 10 boletos para participar en el sorteo",
-      icon: "warning",
-    });
-  }
-  if (numeroE.length > 10 && numeroE.length < 20) {
-    Swal.fire({
-      title: "Escoge 20 boletos para participar en el sorteo",
+      title: "No puedes escoger más de 5 boletos para participar en el sorteo",
       icon: "warning",
     });
   }

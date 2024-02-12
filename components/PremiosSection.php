@@ -1,6 +1,4 @@
-<section id="premios" class="parallax section" style="
-        background-image: url(https://themepush.com/demo/runcharity/assets/img/1.jpg);
-      ">
+<section id="premios" class="parallax section" >
     <div class="wrapsection">
         <div class="parallax-overlay" style="background-color: #01b0d1; opacity: 0.9"></div>
         <div class="container">
