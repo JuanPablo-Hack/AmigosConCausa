@@ -38,7 +38,14 @@
                 <div class="col-md-12">
                     <h3 class="section-title">
                         Escoge los números con los que deseas participar, seguido de eso rellena el formulario con tus datos de contacto y haz clic en enviar.
+                    </h3> <br><br>
+                    <h3 class="section-title">
+                        <center>Por este medio mandas tu pagó y con tu nombre</center>
+                        <center>
+                            <a class="submit3" style="background-color: green;" href="https://api.whatsapp.com/send?phone=5213141424429">Haz click aquí para mandar tu comprobante de pago</a>
+                        </center>
                     </h3>
+                    <br><br><br>
                     <form id="Form_Orden" class="text-left">
                         <fieldset>
                             <div class="row">

@@ -29,9 +29,19 @@
                             <td>062090008444514584</td>
                         </tr>
                         <tr>
+                            <td><img src="./assets/img/bbva.png" alt="bbva"></td>
+                            <td>4152314047365039</td>
+                            <td>012180015467932106</td>
+                        </tr>
+                        <tr>
                             <td><img src="./assets/img/HSBC.png" alt="bbva"></td>
                             <td>N/A</td>
                             <td>021095065977050992</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/img/banorte.png" alt="banorte"></td>
+                            <td>4915663054930459</td>
+                            <td>072095010846994507</td>
                         </tr>
                     </table>
                 </div>
