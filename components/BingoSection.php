@@ -15,7 +15,7 @@
                 <h3 class="section-title">
                     <strong>
                         Fecha del sorteo:
-                        30 de Junio de 2023.
+                        28 de Junio de 2024.
                     </strong>
                 </h3>
                 <br>

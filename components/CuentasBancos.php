@@ -25,7 +25,7 @@
                         </tr>
                         <tr>
                             <td><img src="./assets/img/afirme.jpeg" alt="banamex"></td>
-                            <td>N/A</td>
+                            <td>4130980475595037</td>
                             <td>062090008444514584</td>
                         </tr>
                         <tr>
@@ -35,7 +35,7 @@
                         </tr>
                         <tr>
                             <td><img src="./assets/img/HSBC.png" alt="bbva"></td>
-                            <td>N/A</td>
+                            <td>4213168060503380</td>
                             <td>021095065977050992</td>
                         </tr>
                         <tr>
