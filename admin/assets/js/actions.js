@@ -73,7 +73,7 @@ const cancelar = async (id, tel) => {
   });
   swalWithBootstrapButtons
     .fire({
-      title: "Estas seguro que deseas eliminar el blog?",
+      title: "Estas seguro que cancelar los números?",
       text: "¡No podrás revertir esto!",
       icon: "warning",
       showCancelButton: true,
@@ -95,8 +95,8 @@ const cancelar = async (id, tel) => {
           .then((result) => {
             if (result == 1) {
               swalWithBootstrapButtons.fire(
-                "Eliminado!",
-                "Su archivo ha sido eliminado.",
+                "Cancelado!",
+                "Los números han sido liberados en la tabla del sorteo.",
                 "success"
               );
               setTimeout(function () {

@@ -8,9 +8,8 @@ async function crearOrden(e) {
   document.getElementById("numeros").value = arrayString;
   let form = document.getElementById("Form_Orden");
   let data = new FormData(form);
-  let response;
   data.append("action", "agregar");
-  if (numeroE.length == 5 || numeroE.length == 10 || numeroE.length == 20) {
+  if (numeroE.length == 5) {
     response = await fetch("controllers/orden_controller.php", {
       method: "POST",
       body: data,
