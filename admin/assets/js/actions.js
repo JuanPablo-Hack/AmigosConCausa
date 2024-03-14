@@ -77,7 +77,7 @@ const cancelar = async (id, tel) => {
       text: "¡No podrás revertir esto!",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonText: "Si, eliminar",
+      confirmButtonText: "Si, liberar números",
       cancelButtonText: "No, cancelar!",
       reverseButtons: true,
     })
